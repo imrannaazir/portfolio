@@ -1,10 +1,12 @@
+'react-router-dom';
 import './App.css';
-import Portfolio from './Portfolio/Portfolio';
+import Navbar from './Portfolio/Shared/Navbar';
 
 function App() {
   return (
     <div>
-      <Portfolio />
+      <Navbar />
+
     </div>
   );
 }
