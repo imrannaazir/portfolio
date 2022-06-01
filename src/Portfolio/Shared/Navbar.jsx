@@ -27,22 +27,22 @@ const Navbar = () => {
           </div>
           <div class="flex-1 px-2 mx-2">EMON</div>
           <div class="flex-none hidden lg:block">
-            <ul class="menu menu-horizontal">
+            <ul class="menu menu-horizontal ">
               {/* <!-- Navbar menu content here --> */}
               <li>
-                <a>Home</a>
+                <a href="#banner">Home</a>
               </li>
               <li>
-                <a>About</a>
+                <a href="#about">About</a>
               </li>
               <li>
-                <a>Portfolio</a>
+                <a href="#portfolio">Portfolio</a>
               </li>
               <li>
                 <a>Skills</a>
               </li>
               <li>
-                <a>Contact</a>
+                <a href="#contacts">Contact</a>
               </li>
             </ul>
           </div>

@@ -4,7 +4,7 @@ import Divider from "./Divider";
 
 const Banner = () => {
   return (
-    <div>
+    <div id="banner">
       <div className="max-h-screen flex bg-base-100 ">
         <div className="flex-1 flex items-center justify-center flex-col">
           <div>
