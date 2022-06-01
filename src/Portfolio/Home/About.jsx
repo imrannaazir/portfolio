@@ -1,5 +1,6 @@
 import React from "react";
 import me from "../../assets/images/bannerme.png";
+import DividerWhite from "./DividerWhite";
 const About = () => {
   return (
     <div className="min-h-screen bg-base-200 flex items-center flex-col justify-center gap-24">
@@ -87,6 +88,9 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      <div></div>
+      <DividerWhite />
     </div>
   );
 };
