@@ -1,27 +1,13 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRunning } from "@fortawesome/free-solid-svg-icons";
 const Service = () => {
   return (
     <div className="group flex flex-col justify-center items-center w-[250px] bg-base-200 px-8 py-8 text-center gap-4 rounded-md ">
       <div className="relative">
-        <motion.div
-          whileHover={{
-            scale: 1.2,
-            transition: { duration: 0.3 },
-            rotate: 90,
-            backgroundColor: "#30A5BF",
-          }}
-          whileTap={{
-            scale: 0.8,
-            rotate: -90,
-            borderRadius: "100%",
-          }}
-          class="bg-base-300 group-hover:  mask mask-hexagon transform h-24 w-24 relative"
-        ></motion.div>
+        <div class="bg-base-300 mask mask-hexagon group-hover:rotate-90 group-hover:bg-primary duration-500 transform h-24 w-24 relative"></div>
         <FontAwesomeIcon
-          className="absolute inset-6 text-5xl text-neutral"
+          className="absolute inset-6 text-5xl text-neutral group-hover:text-base-100 transform duration-500 "
           icon={faRunning}
         />
       </div>
