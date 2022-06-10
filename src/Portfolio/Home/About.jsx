@@ -5,10 +5,10 @@ const About = () => {
   return (
     <div
       id="about"
-      className="min-h-screen bg-base-200 flex items-center flex-col justify-center gap-24 "
+      className=" bg-base-200 flex items-center flex-col justify-center gap-24 z-10  "
     >
       <h1 className="text-neutral text-4xl font-bold text-center">About Me</h1>
-      <div className="grid grid-cols-2 justify-items-center gap-16">
+      <div className="grid lg:grid-cols-2 justify-items-center gap-16 px-[10%]">
         <div className="bg-secondary rounded-3xl">
           <img
             className="w-[500px] rounded-3xl -rotate-6 bg-primary "

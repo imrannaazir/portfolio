@@ -21,7 +21,7 @@ const Service = () => {
           class="bg-base-300 group-hover:  mask mask-hexagon transform h-24 w-24 relative"
         ></motion.div>
         <FontAwesomeIcon
-          className="absolute inset-6 text-5xl"
+          className="absolute inset-6 text-5xl text-neutral"
           icon={faRunning}
         />
       </div>
