@@ -3,36 +3,42 @@
     "id": "1",
     "img": "https://i.ibb.co/xLX0CQN/web.jpg",
     "title": "Outtel-tech",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, magni."
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, magni.",
+    "skills": ["HTML", "CSS", "JAVASCRIPT", "REACT JS", "MONGODB", "EXPRESS JS"]
   },
   {
     "id": "2",
     "img": "https://i.ibb.co/xLX0CQN/web.jpg",
     "title": "Outtel-tech",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, magni."
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, magni.",
+    "skills": ["HTML", "CSS", "JAVASCRIPT", "REACT JS", "MONGODB", "EXPRESS JS"]
   },
   {
     "id": "3",
     "img": "https://i.ibb.co/xLX0CQN/web.jpg",
     "title": "Outtel-tech",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, magni."
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, magni.",
+    "skills": ["HTML", "CSS", "JAVASCRIPT", "REACT JS", "MONGODB", "EXPRESS JS"]
   },
   {
     "id": "4",
     "img": "https://i.ibb.co/xLX0CQN/web.jpg",
     "title": "Outtel-tech",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, magni."
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, magni.",
+    "skills": ["HTML", "CSS", "JAVASCRIPT", "REACT JS", "MONGODB", "EXPRESS JS"]
   },
   {
     "id": "5",
     "img": "https://i.ibb.co/xLX0CQN/web.jpg",
     "title": "Outtel-tech",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, magni."
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, magni.",
+    "skills": ["HTML", "CSS", "JAVASCRIPT", "REACT JS", "MONGODB", "EXPRESS JS"]
   },
   {
     "id": "6",
     "img": "https://i.ibb.co/xLX0CQN/web.jpg",
     "title": "Outtel-tech",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, magni."
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, magni.",
+    "skills": ["HTML", "CSS", "JAVASCRIPT", "REACT JS", "MONGODB", "EXPRESS JS"]
   }
 ]

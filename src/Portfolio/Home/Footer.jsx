@@ -3,7 +3,9 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="bg-base-200 p-12 ">
-      <h1 className="text-neutral text-4xl font-bold text-center">EMON</h1>
+      <h1 className="text-primary text-4xl font-bold text-center mb-12">
+        EMON
+      </h1>
       {/* social links */}
       <div className="flex justify-center gap-6">
         {/* linkedin */}
