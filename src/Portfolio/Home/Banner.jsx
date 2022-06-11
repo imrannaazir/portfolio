@@ -1,6 +1,7 @@
 import React from "react";
 import me from "../../assets/images/bannerme.png";
 import Divider from "./Divider";
+import TagsCloud from "./TagsCloud";
 
 const Banner = () => {
   return (
@@ -8,8 +9,7 @@ const Banner = () => {
       <div className="h-full lg:flex bg-base-100 ">
         <div className=" flex-1 flex items-center justify-center flex-col">
           <div>
-            <h3 className="text-2xl">Hello!</h3>
-            <h1 className="text-4xl text-primary">I'm Emon</h1>
+            <TagsCloud />
           </div>
         </div>
         <div className=" ">

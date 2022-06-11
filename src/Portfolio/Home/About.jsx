@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../../assets/images/bannerme.png";
+import me from "../../assets/images/blackme.png";
 import DividerWhite from "./DividerWhite";
 const About = () => {
   return (
