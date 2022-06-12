@@ -66,35 +66,58 @@ const Contacts = () => {
             action=""
           >
             <h3>Get In Touch</h3>
+            {/* your email */}
             <label className="relative">
               <input
                 className="border-2 h-16 pl-4 rounded-xl border-primary w-[450px] text-box"
                 type="text"
                 name="email"
                 id=""
+                autoComplete="off"
                 placeholder=" "
               />
-              <motion.span
+              <span
                 animate={{ duration: 0.2 }}
                 className="absolute top-4 left-4 input-text px-1"
               >
                 Your Email
-              </motion.span>
+              </span>
             </label>
-            <input
-              className="border-2 h-16 pl-4 rounded-xl border-primary"
-              type="text"
-              placeholder="Your Email"
-              name="subject"
-              id=""
-            />
-            <textarea
-              className="border-2 h-44 pt-4 pl-4 rounded-xl border-primary"
-              type="text"
-              placeholder="Your Email"
-              name="message"
-              id=""
-            />
+            {/* Subject */}
+            <label className="relative">
+              <input
+                className="border-2 h-16 pl-4 rounded-xl border-primary w-[450px] text-box"
+                type="text"
+                name="email"
+                id=""
+                autoComplete="off"
+                placeholder=" "
+              />
+              <span
+                animate={{ duration: 0.2 }}
+                className="absolute top-4 left-4 input-text px-1"
+              >
+                Subject
+              </span>
+            </label>
+            {/* your message */}
+            <label className="relative">
+              <textarea
+                className="border-2 h-44 pl-4 rounded-xl border-primary w-[450px] text-box"
+                type="text"
+                name="email"
+                id=""
+                autoComplete="off"
+                placeholder=" "
+              />
+              <span
+                animate={{ duration: 0.2 }}
+                className="absolute top-4 left-4 input-text px-1"
+              >
+                Your Message
+              </span>
+            </label>
+
             <button className="h-16 border-2 text-secondary border-secondary w-40 rounded-xl">
               Send Message
             </button>
