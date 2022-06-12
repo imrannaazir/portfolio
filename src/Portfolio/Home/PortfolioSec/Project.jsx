@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 const Project = ({ project: { img, skills, title, description } }) => {
-  console.log(skills);
   return (
     <motion.div
       whileHover={{ scale: 1.1, boxShadow: "5px 10px 18px #888888" }}
