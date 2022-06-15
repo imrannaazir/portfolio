@@ -1,7 +1,7 @@
 import React from "react";
 import me from "../../assets/images/bannerme.png";
 import Divider from "./Divider";
-import TagsCloud from "./TagsCloud";
+// import TagsCloud from "./TagsCloud";
 
 const Banner = () => {
   return (
@@ -9,7 +9,11 @@ const Banner = () => {
       <div className="h-full lg:flex bg-base-100 ">
         <div className=" flex-1 flex items-center justify-center flex-col">
           <div>
-            <TagsCloud />
+            {/* <TagsCloud /> */}
+            <h1 className="text-2xl">Hello👋</h1>
+            <h1 className="text-primary text-4xl ">
+              I'm Full Stack Developer!
+            </h1>
           </div>
         </div>
         <div className=" ">
