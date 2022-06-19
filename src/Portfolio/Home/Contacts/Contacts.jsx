@@ -11,7 +11,7 @@ const Contacts = () => {
           Contacts
         </h1>
         {/* contact  me */}
-        <div className="flex justify-center gap-16 my-16">
+        <div className="flex flex-wrap justify-center gap-16 my-16">
           {/* chat with me */}
           <SocialSend />
           {/* send email email */}

@@ -17,8 +17,8 @@ const Portfolio = () => {
           Portfolio
         </h1>
         <div className="my-24">
-          <Tab />
-          <div className="grid grid-cols-3 gap-12 px-[15%] 4">
+          {/* <Tab /> */}
+          <div className="grid lg:grid-cols-3 gap-12 px-[15%] 4">
             {projects.map((project) => (
               <Project project={project} />
             ))}

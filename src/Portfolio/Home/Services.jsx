@@ -39,7 +39,7 @@ const Services = () => {
         <h1 className="text-secondary text-4xl font-bold text-center">
           Services
         </h1>
-        <div className="flex justify-center gap-10 my-16">
+        <div className="flex justify-center flex-wrap gap-10 my-16">
           {services.map((service, i) => (
             <Service key={i} service={service} />
           ))}
