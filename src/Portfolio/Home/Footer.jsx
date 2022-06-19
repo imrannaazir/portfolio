@@ -3,14 +3,14 @@ import "../../css/footer.css";
 const Footer = () => {
   return (
     <div className="bg-base-200 p-12  flex flex-col items-center">
-      <h1 className="my-name text-4xl text-center mb-8 font-bold text-secondary ">
+      <h1 className="my-name text-4xl text-center mb-8 font-bold text-primary ">
         Imran Naazir Emon
       </h1>
       {/* social links */}
       <div className="flex justify-center gap-6">
         {/* linkedin */}
         <div className=" relative group">
-          <div className="group  group-hover:rotate-0 transform duration-300 bg-neutral group-hover:bg-primary p-5 rotate-45  rounded-md"></div>
+          <div className="group  group-hover:rotate-0 transform duration-300 bg-secondary group-hover:bg-primary p-5 rotate-45  rounded-md"></div>
           <svg
             width="20px"
             xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
         {/* github */}
         <div className=" relative group">
-          <div className="group  group-hover:rotate-0 transform duration-300 bg-neutral group-hover:bg-primary p-5 rotate-45  rounded-md"></div>
+          <div className="group  group-hover:rotate-0 transform duration-300 bg-secondary group-hover:bg-primary p-5 rotate-45  rounded-md"></div>
           <svg
             width="20px"
             xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
         {/* twitter */}
         <div className=" relative group">
-          <div className="group  group-hover:rotate-0 transform duration-300 bg-neutral group-hover:bg-primary p-5 rotate-45  rounded-md"></div>
+          <div className="group  group-hover:rotate-0 transform duration-300 bg-secondary group-hover:bg-primary p-5 rotate-45  rounded-md"></div>
           <svg
             width="20px"
             xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
 
         <div className=" relative group">
-          <div className="group  group-hover:rotate-0 transform duration-300 bg-neutral group-hover:bg-primary p-5 rotate-45  rounded-md"></div>
+          <div className="group  group-hover:rotate-0 transform duration-300 bg-secondary group-hover:bg-primary p-5 rotate-45  rounded-md"></div>
           <svg
             width="20px"
             xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
         {/* instagram */}
         <div className=" relative group">
-          <div className="group  group-hover:rotate-0 transform duration-300 bg-neutral group-hover:bg-primary p-5 rotate-45  rounded-md"></div>
+          <div className="group  group-hover:rotate-0 transform duration-300 bg-secondary group-hover:bg-primary p-5 rotate-45  rounded-md"></div>
           <svg
             width="20px"
             xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ const Footer = () => {
           </svg>
         </div>
       </div>
-      <span className="text-xs mt-4 text-neutral opacity-75">
+      <span className="text-xs mt-4 text-secondary opacity-75">
         © 2022 Imran Naazir Emon. ALL RIGHTS RESERVED.
       </span>
     </div>

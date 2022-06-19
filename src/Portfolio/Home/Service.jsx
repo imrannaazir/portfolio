@@ -7,7 +7,7 @@ const Service = ({ service: { font, title, description } }) => {
       <div className="relative">
         <div class=" bg-base-300 mask mask-hexagon group-hover:rotate-90 group-hover:bg-primary duration-500 transform h-24 w-24 "></div>
         <FontAwesomeIcon
-          className=" absolute left-0 right-0 my-auto bottom-0 top-0 h-[40px] mx-auto w-[40px]  text-4xl text-neutral group-hover:text-base-100 transform duration-500 "
+          className=" absolute left-0 right-0 my-auto bottom-0 top-0 h-[40px] mx-auto w-[40px]  text-4xl text-secondary group-hover:text-base-100 transform duration-500 "
           icon={font}
         />
       </div>

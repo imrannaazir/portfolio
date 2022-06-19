@@ -25,7 +25,9 @@ const Navbar = () => {
               </svg>
             </label>
           </div>
-          <div class="flex-1 px-2 mx-2">EMON</div>
+          <div class="flex-1 px-2 mx-2 font-[Allura] text-xl font-bold">
+            EMON
+          </div>
           <div class="flex-none hidden lg:block">
             <ul class="menu menu-horizontal ">
               {/* <!-- Navbar menu content here --> */}
@@ -37,9 +39,6 @@ const Navbar = () => {
               </li>
               <li>
                 <a href="#portfolio">Portfolio</a>
-              </li>
-              <li>
-                <a>Skills</a>
               </li>
               <li>
                 <a href="#contacts">Contact</a>
@@ -55,10 +54,16 @@ const Navbar = () => {
         <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
           {/* <!-- Sidebar content here --> */}
           <li>
-            <a>Sidebar Item 1</a>
+            <a href="#banner">Home</a>
           </li>
           <li>
-            <a>Sidebar Item 2</a>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contacts">Contact</a>
           </li>
         </ul>
       </div>

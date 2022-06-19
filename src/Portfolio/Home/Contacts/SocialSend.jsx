@@ -7,20 +7,23 @@ const SocialSend = () => {
     <div className="flex flex-col w-[450px] gap-4 ">
       <p className="text-xl">Chat with me</p>
       {/* email */}
-      <div className="bg-primary flex flex-col items-center p-4 rounded-2xl text-base-100 shadow-lg">
-        <FontAwesomeIcon className="text-3xl" icon={faEnvelope} />
+      <div className="bg-base-300 flex flex-col items-center p-4 rounded-2xl text-primary shadow-lg">
+        <FontAwesomeIcon
+          className="text-3xl text-secondary"
+          icon={faEnvelope}
+        />
         <p>Email</p>
         <p>imrannaaziremon@gmail.com</p>
-        <button className="text-accent mt-2">
+        <button className="text-secondary mt-2">
           Chat me <FontAwesomeIcon icon={faArrowRight} />
         </button>
       </div>
       {/* whatsapp */}
-      <div className="bg-primary flex flex-col items-center p-4 rounded-2xl text-base-100 shadow-lg">
+      <div className="bg-base-300 flex flex-col items-center p-4 rounded-2xl text-primary shadow-lg">
         <svg
           width="30px"
           height="30px"
-          className="fill-base-100"
+          className="fill-secondary"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
         >
@@ -28,16 +31,16 @@ const SocialSend = () => {
         </svg>
         <p>Whatsapp</p>
         <p>+8801405580607</p>
-        <button className="text-accent mt-2">
+        <button className="text-secondary mt-2">
           Chat me <FontAwesomeIcon icon={faArrowRight} />
         </button>
       </div>
       {/* Messenger */}
-      <div className="bg-primary flex flex-col items-center p-4 rounded-2xl text-base-100 shadow-lg">
+      <div className="bg-base-300 flex flex-col items-center p-4 rounded-2xl text-primary shadow-lg">
         <svg
           width="30px"
           height="30px"
-          className="fill-base-100"
+          className="fill-secondary"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
         >
@@ -45,7 +48,7 @@ const SocialSend = () => {
         </svg>
         <p>Messenger</p>
         <p>ImranNaazir</p>
-        <button className="text-accent mt-2">
+        <button className="text-secondary mt-2">
           Chat me <FontAwesomeIcon icon={faArrowRight} />
         </button>
       </div>

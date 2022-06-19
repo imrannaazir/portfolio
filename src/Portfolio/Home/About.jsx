@@ -7,11 +7,13 @@ const About = () => {
       id="about"
       className=" bg-base-200 flex items-center flex-col justify-center gap-24 z-10  "
     >
-      <h1 className="text-neutral text-4xl font-bold text-center">About Me</h1>
+      <h1 className="text-secondary text-4xl font-bold text-center">
+        About Me
+      </h1>
       <div className="grid lg:grid-cols-2 justify-items-center gap-16 px-[10%]">
-        <div className="bg-secondary rounded-3xl">
+        <div className="bg-base-300 rounded-3xl">
           <img
-            className="w-[500px] rounded-3xl -rotate-6 bg-primary "
+            className="w-[500px] rounded-3xl -rotate-6 bg-base-100 "
             src={me}
             alt=""
           />
@@ -24,7 +26,7 @@ const About = () => {
               <span>90%</span>
             </p>
             <progress
-              class="progress progress-primary w-full"
+              class="progress progress-secondary w-full"
               value="90"
               max="100"
             ></progress>
@@ -36,7 +38,7 @@ const About = () => {
               <span>85%</span>
             </p>
             <progress
-              class="progress progress-primary w-full"
+              class="progress progress-secondary w-full"
               value="85"
               max="100"
             ></progress>
@@ -48,7 +50,7 @@ const About = () => {
               <span>70%</span>
             </p>
             <progress
-              class="progress progress-primary w-full"
+              class="progress progress-secondary w-full"
               value="70"
               max="100"
             ></progress>
@@ -60,7 +62,7 @@ const About = () => {
               <span>75%</span>
             </p>
             <progress
-              class="progress progress-primary w-full"
+              class="progress progress-secondary w-full"
               value="75"
               max="100"
             ></progress>
@@ -72,7 +74,7 @@ const About = () => {
               <span>50%</span>
             </p>
             <progress
-              class="progress progress-primary w-full"
+              class="progress progress-secondary w-full"
               value="50"
               max="100"
             ></progress>
@@ -84,7 +86,7 @@ const About = () => {
               <span>55%</span>
             </p>
             <progress
-              class="progress progress-primary w-full"
+              class="progress progress-secondary w-full"
               value="55"
               max="100"
             ></progress>
