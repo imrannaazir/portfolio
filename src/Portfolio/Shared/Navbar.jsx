@@ -1,7 +1,32 @@
 import React from "react";
 import Home from "../Home/Home";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
+  const links = (
+    <>
+      <li>
+        <HashLink className="rounded-xl" to="/#banner" smooth>
+          Home
+        </HashLink>
+      </li>
+      <li>
+        <HashLink className="rounded-xl" to="/#about" smooth>
+          About
+        </HashLink>
+      </li>
+      <li>
+        <HashLink className="rounded-xl" to="/#portfolio" smooth>
+          Portfolio
+        </HashLink>
+      </li>
+      <li>
+        <HashLink className="rounded-xl" to="/#contacts" smooth>
+          Contact
+        </HashLink>
+      </li>
+    </>
+  );
   return (
     <div class="drawer">
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
@@ -31,18 +56,7 @@ const Navbar = () => {
           <div class="flex-none hidden lg:block">
             <ul class="menu menu-horizontal ">
               {/* <!-- Navbar menu content here --> */}
-              <li>
-                <a href="#banner">Home</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#portfolio">Portfolio</a>
-              </li>
-              <li>
-                <a href="#contacts">Contact</a>
-              </li>
+              {links}
             </ul>
           </div>
         </div>
@@ -53,18 +67,7 @@ const Navbar = () => {
         <label for="my-drawer-3" class="drawer-overlay"></label>
         <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
           {/* <!-- Sidebar content here --> */}
-          <li>
-            <a href="#banner">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a href="#contacts">Contact</a>
-          </li>
+          {links}
         </ul>
       </div>
     </div>

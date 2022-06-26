@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-const Project = ({ project: { img, skills, title, description } }) => {
+const Project = ({
+  project: { img, skills, title, description, live, repo },
+}) => {
   return (
     <motion.div
       whileHover={{ scale: 1.1, boxShadow: "5px 10px 18px #888888" }}
@@ -13,8 +15,9 @@ const Project = ({ project: { img, skills, title, description } }) => {
         <div className="h-full flex justify-center items-center -translate-y-12 gap-6">
           {/* visit */}
           <motion.a
+            target="_blank"
             whileHover={{ scale: 0.8 }}
-            href="#"
+            href={live}
             className="w-[50px] h-[50px] bg-black flex justify-center items-center rounded-full"
           >
             <svg
@@ -30,8 +33,9 @@ const Project = ({ project: { img, skills, title, description } }) => {
           {/* github */}
 
           <motion.a
+            target="_blank"
             whileHover={{ scale: 0.8 }}
-            href="#"
+            href={repo}
             className="w-[50px] h-[50px] bg-black flex justify-center items-center rounded-full"
           >
             <svg

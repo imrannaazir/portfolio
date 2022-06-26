@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import DividerWhite from "../DividerWhite";
 import Project from "./Project";
-import Tab from "./Tab";
+// import Tab from "./Tab";
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([]);
