@@ -57,9 +57,9 @@ const Hero: FC<HeroProps> = ({ }) => {
 
 
 
-    return <section className='grid grid-cols-[67%_33%] gap-2 mt-8 '>
+    return <section className='grid grid-cols-1 lg:grid-cols-[67%_33%] gap-16 lg:gap-2 mt-8 '>
         {/* grid one */}
-        <div className="flex flex-col justify-center ">
+        <div className="flex flex-col justify-center items-center lg:items-start">
 
             <div className="inline-flex items-center justify-between px-1 py-1 pr-4 rounded-full bg-gray-700/60 bg-primary-25 w-fit">
                 <span dangerouslySetInnerHTML={{ __html: quote?.emoji }} className="px-2 py-1 mr-3 font-medium rounded-full bg-slate-700 text-neutral-0" />
@@ -68,21 +68,21 @@ const Hero: FC<HeroProps> = ({ }) => {
 
 
             <div className="relative h-fit w-full mt-8">
-                <TextAnimation text='My Name Is Nayan & Im' delayTime={0} />
-                <TextAnimation text='Your Web App Developer' classNameDiv='absolute inset-0 top-12' delayTime={1} />
+                <TextAnimation text='My Name Is Nayan & Im' classNameDiv='flex justify-center lg:justify-start items-center' delayTime={0} />
+                <TextAnimation text='Your Web App Developer' classNameDiv='absolute inset-0 top-12 flex justify-center lg:justify-start items-center' delayTime={1} />
             </div>
 
             <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 3, }}
-                className="font-light mt-20 leading-relaxed tracking-wider lg:pb-12 text-white/60 description lg:text-xl">To date, I&apos;ve developed <span className="font-bold">100+ websites</span>, interacted with<span className="font-bold">37 founders</span>, and worked with <span className="font-bold">3 startups</span>. It&apos;s time for you to speak up; let&apos;s get started!</motion.p>
+                className="font-light mt-20 leading-relaxed text-center lg:text-left tracking-wider lg:pb-12 text-white/60 description lg:text-xl">To date, I&apos;ve developed <span className="font-bold">100+ websites</span>, interacted with<span className="font-bold">37 founders</span>, and worked with <span className="font-bold">3 startups</span>. It&apos;s time for you to speak up; let&apos;s get started!</motion.p>
 
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 4, }}
-                className="flex flex-row gap-3 justify-start mt-2 items-center">
+                className="flex flex-row gap-3 justify-start mt-6 lg:mt-2 items-center">
 
                 <Button onClick={setIsOpen} className='bg-slate-700 hover:bg-slate-900 px-4 text-base font-normal py-2 rounded-[10px]' variant="default">
                     <span className="pr-2 wave">👋</span>

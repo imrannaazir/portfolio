@@ -14,7 +14,7 @@ interface OurModelProps {
 const OurModel: FC<OurModelProps> = ({ }) => {
 
     return <div
-        className='grid grid-cols-3 gap-8 mt-20 mx-1'>
+        className='grid grid-cols-1 lg:grid-cols-3 gap-8 mt-20 mx-1'>
         {ModalData?.map((data, index) => {
             const { id, img, para, title } = data
             return (

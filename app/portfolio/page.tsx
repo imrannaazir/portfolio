@@ -4,6 +4,7 @@ import HeadingShortner from '@components/global/HeadingShortner'
 import MotionWrapper from '@components/animation/MotionWrapper'
 import MapProjects from '@components/pages/Home/projects/MapProjects'
 import Container from '@components/container/Container'
+import { ProjectsType, projectdetails } from '@constants/project'
 
 
 
@@ -15,9 +16,9 @@ const page: FC = () => {
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 mt-3">
-            {[343, 34, 4, 4, 4].map((data, index) => {
+            {projectdetails?.map((data: ProjectsType, index: number) => {
                 return (
-                    <MapProjects key={data} index={index} />
+                    <MapProjects key={data?.id} index={index} {...data} />
                 )
             })}
         </div>
