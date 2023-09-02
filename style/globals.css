@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url('../public/home/bg.jpeg');
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+.cardBg {
+    background-color: hsla(0, 0%, 100%, .15);
+}
+
+.parallax_effect {
+    transform-style: preserve-3d;
+}
+
+.overlay::before {
+    left: 0;
+    top: 0;
+}
+
+.overlay::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.overlay::before,
+.overlay::after {
+    background: linear-gradient(to right, rgba(17, 24, 40, 1), rgba(17, 24, 40, 0));
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+}
+
+
+.marquee {
+    flex: 0 0 auto;
+    min-width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    animation: scroll 124.8s linear 0s infinite;
+    animation-play-state: running;
+    animation-delay: 0s;
+}
+
+.reverse_direction {
+    animation-direction: reverse;
+}
+
+.normal_direction {
+    animation-direction: normal;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(14deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(14deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.lazy-load-image-background.blur.lazy-load-image-loaded {
+    filter: blur(0);
+    transition: filter .3s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: filter;
+}
+
+.lazy-load-image-background.blur {
+    filter: blur(15px);
+}
+
+
+.calendly-overlay {
+    /* background-color: #a5a5a5; */
+    /* background-color: rgba(31, 31, 31, 0.4); */
+    background-color: red;
+}
