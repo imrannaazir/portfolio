@@ -1,14 +1,16 @@
-import { ProjectValidation } from "@lib/ZodValidation"
+import { SocialValidation } from "@lib/ZodValidation"
 import { db } from "@lib/db"
 import { NextResponse } from "next/server"
 import { z } from "zod"
 
 export const GET = async (req: Request) => {
   try {
-    const fetchProjects = await db?.projects?.findMany()
-    if (fetchProjects) {
-      return NextResponse.json({ data: fetchProjects, status: 200 })
+    const socialData = await db?.socialUrls?.findMany()
+
+    if (socialData) {
+      return NextResponse.json({ data: socialData, status: 200 })
     }
+
     return new Response("No data present", { status: 404 })
   } catch (error) {
     return new Response("Internal Server Error", { status: 500 })
@@ -18,30 +20,27 @@ export const GET = async (req: Request) => {
 export const POST = async (req: Request) => {
   try {
     const body = await req.json()
-    const { image, projectLink, projectName } = ProjectValidation.parse(body)
+    const { github, linkedin, facebook, instagram, slack, twitter, youtube } =
+      SocialValidation.parse(body)
 
     //  checking already an image or projectLink exist in db or not
 
-    const projectExist = await db?.projects?.findFirst({
+    const socialExist = await db?.socialUrls?.findFirst({
       where: {
-        image,
-        projectLink,
+        github,
+        linkedin,
       },
     })
 
-    if (projectExist) {
-      return new Response("Project Already Exists!", { status: 409 })
+    if (socialExist) {
+      return new Response("Member Already Exists!", { status: 409 })
     }
 
-    const createProject = await db?.projects?.create({
-      data: {
-        image,
-        projectLink,
-        projectName,
-      },
+    const createSocial = await db?.socialUrls?.create({
+      data: { github, linkedin, facebook, instagram, slack, twitter, youtube },
     })
 
-    return NextResponse.json({ data: createProject, status: 200 })
+    return NextResponse.json({ data: createSocial, status: 200 })
   } catch (error) {
     if (error instanceof z.ZodError) {
       return new Response("Invalid data", { status: 400 })

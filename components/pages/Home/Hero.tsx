@@ -7,6 +7,8 @@ import { motion } from 'framer-motion'
 import { Button } from '@components/ui/button/Button'
 import HoverButton from '@components/ui/button/HoverButton'
 import Link from 'next/link'
+import { PopupWidget } from 'react-calendly'
+import { useNavigation } from '@hooks/useNavigation'
 
 interface HeroProps {
 
@@ -15,6 +17,10 @@ interface HeroProps {
 const Hero: FC<HeroProps> = ({ }) => {
 
     const [time, setTime] = useState(new Date());
+    const { setIsOpen } = useNavigation(state => ({
+        setIsOpen: state.setIsOpen
+    }))
+
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -78,12 +84,10 @@ const Hero: FC<HeroProps> = ({ }) => {
                 transition={{ duration: 0.4, delay: 4, }}
                 className="flex flex-row gap-3 justify-start mt-2 items-center">
 
-                <Link href="/schedule">
-                    <Button className='bg-slate-700 hover:bg-slate-900 px-4 text-base font-normal py-2 rounded-[10px]' variant="default">
-                        <span className="pr-2 wave">👋</span>
-                        Let&apos;s Talks
-                    </Button>
-                </Link>
+                <Button onClick={setIsOpen} className='bg-slate-700 hover:bg-slate-900 px-4 text-base font-normal py-2 rounded-[10px]' variant="default">
+                    <span className="pr-2 wave">👋</span>
+                    Let&apos;s Talks
+                </Button>
 
                 <Link target='_blank' href="https://www.noblespiritz.org/" >
                     <HoverButton label='My Company' className='bg-gray-800 py-2' />

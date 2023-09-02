@@ -7,7 +7,8 @@ import MapProjects from './MapProjects'
 import { shallow } from 'zustand/shallow'
 import { useNavigation } from '@hooks/useNavigation'
 import { useRouter } from 'next/navigation'
-
+import { useQuery } from '@tanstack/react-query'
+import { ProjectsType } from '@types/types'
 
 
 const Projects: FC = () => {
@@ -21,6 +22,16 @@ const Projects: FC = () => {
             router?.push('/portfolio')
     }
 
+    const { isFetched, data: projects } = useQuery({
+        queryFn: async () => {
+            const res = await fetch('/api/projects', { cache: "no-store" })
+            const project = await res.json()
+            return project
+        },
+        queryKey: ['project-data'],
+        retry: 3,
+    })
+
 
     return <section className='mt-16'>
         <HeadingShortner
@@ -29,9 +40,9 @@ const Projects: FC = () => {
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 mt-3">
-            {[343, 34, 4, 4, 4].map((data, index) => {
+            {projects?.data?.map((data: ProjectsType, index: number) => {
                 return (
-                    <MapProjects key={data} index={index} />
+                    <MapProjects key={data?.id} index={index} {...data} />
                 )
             })}
         </div>

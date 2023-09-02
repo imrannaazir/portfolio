@@ -17,3 +17,13 @@ export const ResourceValidataion = z.object({
   image: z.string(),
   redirectUrl: z.string(),
 })
+
+export const SocialValidation = z.object({
+  github: z.string(),
+  linkedin: z.string(),
+  instagram: z.string().optional(),
+  facebook: z.string().optional(),
+  youtube: z.string().optional(),
+  twitter: z.string().optional(),
+  slack: z.string().optional(),
+})

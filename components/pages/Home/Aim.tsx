@@ -7,7 +7,8 @@ import { FC } from 'react'
 import { AimData } from '@constants/Aim'
 import { AnimationType } from '@components/animation/Motion'
 import MotionWrapper from '@components/animation/MotionWrapper'
-import Link from 'next/link'
+import { useNavigation } from '@hooks/useNavigation'
+
 
 interface AimProps {
 
@@ -16,6 +17,11 @@ interface AimProps {
 const Aim: FC<AimProps> = ({ }) => {
 
     const ref = useRef<HTMLElement>(null)
+    const { setIsOpen } = useNavigation(state => ({
+        setIsOpen: state.setIsOpen
+    }))
+
+
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ['0 1', '1 1']
@@ -49,9 +55,7 @@ const Aim: FC<AimProps> = ({ }) => {
         <div className="flex flex-col items-center justify-center p-5 pb-8 space-y-6 text-center md:items-start lg:text-left">
             <h1 className="text-3xl font-bold text-white lg:text-4xl title"> Let&apos;s develop a meaningful <span className="mt-0 text-transparent md:mt-5 bg-clip-text bg-gradient-to-r from-red-600 to-purple-500">web application</span> </h1>
             <p className="text-white/70">Whether you need a corporate website with an integrated booking system, a simple landing page to collect leads, or even a complete restaurant management system, I can pull it off for you. Starting from subtle &quot;wow&quot; animations to complex development, me and my team have what it takes to help you stand out from the crowd.<span className="block font-bold">Seriously, what are you waiting for?</span></p>
-            <Link href="/schedule">
-                <HoverButton label="Let' Get Started" className='bg-white/80 text-base hover:text-white text-black' />
-            </Link>
+            <HoverButton onClick={setIsOpen} label="Let' Get Started" className='bg-white/80 text-base hover:text-white text-black' />
         </div>
 
     </motion.section>
