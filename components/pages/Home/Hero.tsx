@@ -2,12 +2,11 @@
 import TextAnimation from '@components/animation/TextAnimation'
 import Image from 'next/image'
 import { FC, useState, useEffect } from 'react'
-import HeroImage from '../../../public/home/hero.webp'
+import HeroImage from '../../../public/home/hero.jpg'
 import { motion } from 'framer-motion'
 import { Button } from '@components/ui/button/Button'
 import HoverButton from '@components/ui/button/HoverButton'
 import Link from 'next/link'
-import { PopupWidget } from 'react-calendly'
 import { useNavigation } from '@hooks/useNavigation'
 
 interface HeroProps {
@@ -76,7 +75,7 @@ const Hero: FC<HeroProps> = ({ }) => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 3, }}
-                className="font-light mt-20 leading-relaxed text-center lg:text-left tracking-wider lg:pb-12 text-white/60 description lg:text-xl">To date, I&apos;ve developed <span className="font-bold">100+ websites</span>, interacted with<span className="font-bold">37 founders</span>, and worked with <span className="font-bold">3 startups</span>. It&apos;s time for you to speak up; let&apos;s get started!</motion.p>
+                className="font-light mt-20 leading-relaxed text-center lg:text-left tracking-wider lg:pb-12 text-white/60 description lg:text-xl">To date, I&apos;ve developed <span className="font-bold">30+ websites</span>, interacted with <span className="font-bold">5 founders</span>, and worked with <span className="font-bold">1 startup</span>. It&apos;s time for you to speak up; let&apos;s get started!</motion.p>
 
             <motion.div
                 initial={{ opacity: 0, y: 20 }}

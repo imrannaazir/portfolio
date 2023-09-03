@@ -10,8 +10,8 @@ type AimType = {
 }
 
 export const AimData: AimType[] = [
-  { id: 45435, img: web, heading: "Web App" },
-  { id: 78678, img: cms, heading: "Headless CMS" },
-  { id: 4567457, img: ecommerce, heading: "eCommerce" },
-  { id: 4567847, img: prototyping, heading: "Prototyping" },
+  { id: 78444574, img: web, heading: "Web App" },
+  { id: 5123747, img: cms, heading: "Headless CMS" },
+  { id: 7435689, img: ecommerce, heading: "eCommerce" },
+  { id: 45367848, img: prototyping, heading: "Prototyping" },
 ]

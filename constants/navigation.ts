@@ -12,9 +12,9 @@ type navigationType = {
 }
 
 export const navigation: navigationType[] = [
-  { id: 34545, label: "Home", svg: home, href: "/" },
-  { id: 43634, label: "Service", svg: service, href: "/#service" },
-  { id: 34784, label: "Portfolio", svg: copy, href: "/portfolio" },
-  { id: 67867, label: "About Me", svg: info, href: "/#about" },
-  { id: 45435, label: "Resources", svg: resource, href: "/resources" },
+  { id: 756237589, label: "Home", svg: home, href: "/" },
+  { id: 895893787, label: "Service", svg: service, href: "/#service" },
+  { id: 7878084646, label: "Portfolio", svg: copy, href: "/portfolio" },
+  { id: 71547005, label: "About Me", svg: info, href: "/#about" },
+  { id: 7867457478, label: "Resources", svg: resource, href: "/resources" },
 ]

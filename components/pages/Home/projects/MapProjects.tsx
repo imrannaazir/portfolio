@@ -13,7 +13,7 @@ interface MapProjectsProps extends ProjectsType {
 const MapProjects: FC<MapProjectsProps> = ({ index, id, image, site_url, projectName }) => {
 
 
-    return (<motion.div variants={AnimationType("up", "spring", index * 0.5, 0.75)} className="m-4 rounded-[10px] transition-colors duration-200 shadow bg-opacity-60 bg-clip-padding hover:ring-1 hover:ring-blue-400 bg-slate-600/20 ring-1 ring-blue-400/20">
+    return (<motion.div variants={AnimationType("up", "spring", index * 0.5, 0.75)} className="m-4 rounded-[10px] transition-all duration-300 shadow bg-opacity-60 bg-clip-padding hover:ring-1 hover:ring-blue-400 bg-slate-600/20 ring-1 ring-blue-400/20">
         <div className="p-2">
             <Image
                 alt='project-image'

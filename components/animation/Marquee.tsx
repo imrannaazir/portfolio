@@ -14,10 +14,11 @@ const Marquee: FC<MarqueeProps> = ({ data, direction, className }) => {
 
 
     return <div className={cn('overflow-x-hidden w-full h-fit flex flex-row relative box-border', className)}>
-        {/* overlay here  */}
+
+
         <div className="w-full h-full absolute overlay" />
         <div className={`marquee ${direction === 'reverse' ? 'reverse_direction' : 'normal_direction'}`}>
-            {data?.map((elem, index) => {
+            {data?.map((elem) => {
                 const { id, para, name } = elem
                 return (
                     <div key={id + 65} className='mx-2 grid grid-cols-4 w-[400px] items-center bg-slate-700/30 px-2 rounded-[8px]'>
@@ -34,8 +35,9 @@ const Marquee: FC<MarqueeProps> = ({ data, direction, className }) => {
                 )
             })}
         </div>
+
         <div className={`marquee mr-[4rem] ${direction === 'reverse' ? 'reverse_direction' : 'normal_direction'}`} aria-hidden='true'>
-            {data?.map((elem, index) => {
+            {data?.map((elem) => {
                 const { id, para, name } = elem
                 return (
                     <div key={id + 343} className='mx-2 grid grid-cols-4 w-[400px] items-center bg-slate-700/30 px-2 rounded-[8px]'>

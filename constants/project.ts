@@ -13,31 +13,31 @@ export type ProjectsType = {
 
 export const projectdetails: ProjectsType[] = [
   {
-    id: 4523452,
+    id: 5735564384569,
     image: walkwise,
     projectName: "Ecommerce Shoe",
     site_url: "https://walkwise-walkwise-000024.netlify.app/",
   },
   {
-    id: 456737,
+    id: 97898589678,
     image: dallie,
     projectName: "Dallie-2 Open Ai",
     site_url: "https://dallie-2-openai-stable-diffusion.netlify.app/",
   },
   {
-    id: 56345,
+    id: 8378745736,
     image: movix,
     projectName: "Movix website",
     site_url: "https://movix-clone-hosting-6a9c7.web.app/",
   },
   {
-    id: 564533,
+    id: 94587845756,
     image: youtube,
     projectName: "Youtube clone",
     site_url: "https://clone-372007.web.app/",
   },
   {
-    id: 436456,
+    id: 906789568856,
     image: disney,
     projectName: "Disney + clone",
     site_url: "https://disneypluse.firebaseapp.com/",

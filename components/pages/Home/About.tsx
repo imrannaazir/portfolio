@@ -1,5 +1,5 @@
 'use client'
-import { useScroll, useTransform, motion, useMotionValueEvent } from 'framer-motion'
+import { useScroll, useTransform, motion } from 'framer-motion'
 import { useRef } from 'react'
 import Image from 'next/image'
 import { FC } from 'react'
@@ -16,9 +16,7 @@ const About: FC = () => {
         offset: ['0 1', '.4 1']
     })
     const scaleTranslate = useTransform(scrollYProgress, [0, 1], ['20%', '0%'])
-    useMotionValueEvent(scaleTranslate, "change", (latest) => {
-        console.log("Page scroll: ", latest)
-    })
+
 
 
 
@@ -26,10 +24,10 @@ const About: FC = () => {
     } ref={ref} className='my-8 lg:my-16 backdrop-blur-[10px]' id='about'>
         <div className="bg-opacity-0 rounded-2xl bg-slate-600/20 ring-1 ring-blue-400/20 aboutMe">
             <div className="px-1 mx-auto max-w-7xl sm:px-8">
-                <div className="items-center py-6 md:flex ">
+                <div className="items-center py-6 lg:flex ">
                     <div className="flex-1 mx-5 font-sans text-white lg:mb-0 aboutText">
                         <h1 className="my-5 text-3xl font-bold lg:5xl">About Me</h1>
-                        <p className="font-light leading-relaxed tracking-wide opacity-75 ">This is Raqib Nur, a Web Application Developer residing in Dhaka, Bangladesh. Even if it sounds humorous, I went to Madrasa and returned as a programmer! ✌<br /><br />I consider myself to be completely blessed as I get to inspect and build websites for a living. Of my intense interest in the Web Platform &amp; SaaS products, I plan to build results-driven digital products for my clients while becoming part of meaningful businesses along the way.<br /><br />I&apos;ve built numerous websites and worked closely with the founders of the companies. Besides, I&apos;ve also committed my time to 3 companies part-time to help them hire and manage their own technical team, and I am here today to become a part of your journey.<br /><br />Recently, I&apos;ve co-founded an eCommerce Development Company: The Run Digital, where we help entrepreneurs fix their web goals and help them achieve them with our web-based solutions. We are, after all, KPI-driven.</p>
+                        <p className="font-light leading-relaxed tracking-wide opacity-75 ">This is Nayan chandrakar, a Web Application Developer from Raipur chhattisgarh.I learnt all the tech stacks from my self like Next Js , Tailwind css etc.! ✌<br /><br />I consider myself to be completely blessed as I get to inspect and build websites for a living. Of my intense interest in the Web Platform &amp; SaaS products, I plan to build results-driven digital products for my clients while becoming part of meaningful businesses along the way.<br /><br />I&apos;ve built numerous websites and worked closely with the founders of the companies. Besides, I&apos;ve also committed my time to 1 companies full-time to help them hire and manage their own technical team, and I am here today to become a part of your journey.<br /><br />Recently, I have developed a platfrom that is an digital marketing platform: The Run Digital, where we help entrepreneurs fix their web goals and help them achieve them with our web-based solutions. We are, after all, KPI-driven.</p>
 
                         <div className="flex my-5 space-x-4 align-middle">
                             {socialData?.map((data, index) => {

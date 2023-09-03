@@ -1,6 +1,5 @@
 'use client'
 import { VirtualData } from '@constants/Virtual'
-import { cn } from '@lib/utils'
 import { useScroll, useTransform, motion } from 'framer-motion'
 import Image from 'next/image'
 import { useRef } from 'react'

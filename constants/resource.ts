@@ -13,31 +13,31 @@ export type ResourceType = {
 
 export const resourceData: ResourceType[] = [
   {
-    id: 2342,
+    id: 3475793763,
     redirectUrl: "https://nextjs.org/",
     image: nextjs,
     resourceName: "Next Js a fullstack react framework",
   },
   {
-    id: 457457,
+    id: 4323782,
     redirectUrl: "https://www.prisma.io/",
     image: prisma,
     resourceName: "Prisma orm for sql and nosql database",
   },
   {
-    id: 34525,
+    id: 9569856856,
     redirectUrl: "https://tanstack.com/query/v3/",
     image: reactquery,
     resourceName: "React Query a react library for data fetching",
   },
   {
-    id: 785678,
+    id: 23536734,
     redirectUrl: "https://ui.shadcn.com/",
     image: shadcn,
     resourceName: "Shadcn a new trending ui tailwindcss library",
   },
   {
-    id: 345257,
+    id: 89670679,
     redirectUrl: "https://www.typescriptlang.org/",
     image: typescript,
     resourceName: "Typescript documentation page for tyescript learning.",

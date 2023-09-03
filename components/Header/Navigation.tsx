@@ -3,18 +3,11 @@ import { FC } from "react";
 import { navigation } from "@constants/navigation";
 import { cn } from "@lib/utils";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next-nprogress-bar";
 import { useNavigation } from "@hooks/useNavigation";
 
 
-
-interface NavigationProps {
-
-}
-
-
-
-const Navigation: FC<NavigationProps> = () => {
+const Navigation: FC = () => {
     const router = useRouter()
     const { path, setpath } = useNavigation(state => ({
         path: state?.path,
@@ -34,7 +27,7 @@ const Navigation: FC<NavigationProps> = () => {
                     const { id, label, svg, href } = data
                     return (
                         <span onClick={() => handleNavigation(href)} key={id} className={cn('flex  flex-row items-center justify-center gap-1.5 px-4 py-1.5 rounded-[8px] transition-colors duration-200 hover:bg-gray-500/20  cursor-pointer text-white font-medium', { 'bg-blue-600 hover:bg-blue-600': path === href })}>
-                            <Image src={svg} alt="Image_not" className="w-7 invert" width={10} height={10} />
+                            <Image src={svg} alt="navigation-image" className="w-7 invert" width={10} height={10} />
                             {label}
                         </span>
                     )

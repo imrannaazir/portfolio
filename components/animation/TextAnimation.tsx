@@ -1,4 +1,3 @@
-'use client'
 import React, { FC } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@lib/utils";
@@ -52,7 +51,7 @@ const TextAnimation: FC<TextAnimationProps> = ({ text, classNameDiv, classNameSp
         >
             {letters.map((letter, index) => {
                 return (
-                    <motion.span className={cn("text-3xl lg:text-5xl text-white font-bold", classNameSpan)} variants={child} key={index}>
+                    <motion.span className={cn("text-[1.6rem] lg:text-5xl text-white font-bold min-[430px]:text-3xl ", classNameSpan)} variants={child} key={index}>
                         {letter === " " ? "\u00A0" : letter}
                     </motion.span>
                 )
