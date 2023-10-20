@@ -13,6 +13,12 @@ export type ProjectsType = {
 }
 
 export const projectdetails: ProjectsType[] = [
+   {
+    id: 45894586847,
+    image: airbnb,
+    projectName: "Airbnb clone",
+    site_url: "https://airbnb-rent-clone.vercel.app/",
+  },
   {
     id: 5735564384569,
     image: walkwise,
@@ -42,11 +48,5 @@ export const projectdetails: ProjectsType[] = [
     image: disney,
     projectName: "Disney + clone",
     site_url: "https://disneypluse.firebaseapp.com/",
-  },
-  {
-    id: 45894586847,
-    image: airbnb,
-    projectName: "Airbnb clone",
-    site_url: "https://airbnb-rent-clone.vercel.app/",
-  },
+  }
 ]
