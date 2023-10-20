@@ -3,6 +3,7 @@ import dallie from "../public/projects/dallie.jpeg"
 import disney from "../public/projects/disney.jpeg"
 import movix from "../public/projects/movix.jpeg"
 import youtube from "../public/projects/youtube.jpeg"
+import airbnb from "../public/projects/airbnb.png"
 
 export type ProjectsType = {
   id: number
@@ -41,5 +42,11 @@ export const projectdetails: ProjectsType[] = [
     image: disney,
     projectName: "Disney + clone",
     site_url: "https://disneypluse.firebaseapp.com/",
+  },
+  {
+    id: 45894586847,
+    image: airbnb,
+    projectName: "Airbnb clone",
+    site_url: "https://airbnb-rent-clone.vercel.app/",
   },
 ]
