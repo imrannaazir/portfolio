@@ -4,6 +4,8 @@ import disney from "../public/projects/disney.jpeg"
 import movix from "../public/projects/movix.jpeg"
 import youtube from "../public/projects/youtube.jpeg"
 import airbnb from "../public/projects/airbnb.png"
+import admin from "../public/projects/admin.png"
+import store from "../public/projects/store.png"
 
 export type ProjectsType = {
   id: number
@@ -13,6 +15,18 @@ export type ProjectsType = {
 }
 
 export const projectdetails: ProjectsType[] = [
+   {
+    id: 34535745,
+    image: store,
+    projectName: "Ecommerce Store",
+    site_url: "https://nextjs-ecommerce-store-theta.vercel.app/",
+  },
+   {
+    id: 5774434,
+    image: admin,
+    projectName: "Scalable Admin panel",
+    site_url: "https://nextjs-ecommerce-admin-panel.vercel.app/",
+  },
    {
     id: 45894586847,
     image: airbnb,
