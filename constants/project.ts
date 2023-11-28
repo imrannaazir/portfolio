@@ -6,6 +6,7 @@ import youtube from "../public/projects/youtube.jpeg"
 import airbnb from "../public/projects/airbnb.png"
 import admin from "../public/projects/admin.png"
 import store from "../public/projects/store.png"
+import humanAI from "../public/projects/ai_saas.jpg"
 
 export type ProjectsType = {
   id: number
@@ -15,6 +16,12 @@ export type ProjectsType = {
 }
 
 export const projectdetails: ProjectsType[] = [
+    {
+    id: 7345643,
+    image: humanAI,
+    projectName: "Human AI Saas",
+    site_url: "https://human-ai-intelligence.vercel.app",
+  },
    {
     id: 34535745,
     image: store,
