@@ -1,25 +1,11 @@
 "use client";
-import { FC } from "react";
 import HeadingShortner from "@components/global/HeadingShortner";
 import MotionWrapper from "@components/animation/MotionWrapper";
 import MapProjects from "@components/pages/Home/projects/MapProjects";
 import Container from "@components/container/Container";
-import Head from "next/head";
 import { TProject } from "@types";
 
-const baseUrl = process.env.NEXT_PUBLIC_DB_URL;
-async function getData() {
-  const projectRes = await fetch(`${baseUrl}/projects`);
-
-  if (!projectRes.ok) {
-    throw new Error("Failed to fetch projects");
-  }
-
-  const projectsData = await projectRes.json();
-  return projectsData;
-}
-
-const page = ({ projects }: { projects: TProject[] }) => {
+const Projects = ({ projects }: { projects: TProject[] }) => {
   return (
     <Container className="my-20">
       <HeadingShortner
@@ -36,4 +22,4 @@ const page = ({ projects }: { projects: TProject[] }) => {
   );
 };
 
-export default MotionWrapper(page, "");
+export default MotionWrapper(Projects, "");
