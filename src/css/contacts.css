@@ -1,8 +1,0 @@
-.text-box:focus ~ .input-text,
-.text-box:not(:placeholder-shown).text-box:not(:focus) ~ .input-text {
-  @apply text-white  transition-transform -translate-y-7  bg-base-100 scale-90 duration-200;
-}
-.text-box:focus ~ .input-box,
-.text-box:not(:placeholder-shown).text-box:not(:focus) ~ .input-box {
-  @apply bg-white;
-}
