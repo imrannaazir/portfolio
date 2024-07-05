@@ -6,8 +6,8 @@ import HeroImage from "../../../public/home/hero.png";
 import { motion } from "framer-motion";
 import { Button } from "@components/ui/button/Button";
 import HoverButton from "@components/ui/button/HoverButton";
-import Link from "next/link";
 import { useNavigation } from "@hooks/useNavigation";
+import resume from "../../../public/about/about.webp";
 
 interface HeroProps {}
 
@@ -29,6 +29,16 @@ const Hero: FC<HeroProps> = ({}) => {
   const updateTime = () => {
     const newTime = new Date();
     setTime(newTime);
+  };
+
+  // download resume
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "../../../public/resume/resume.pdf"; // Path to your PDF file in the public directory
+    link.download = "resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const getQuote = (hours: number) => {
@@ -118,10 +128,10 @@ const Hero: FC<HeroProps> = ({}) => {
             <span className="pr-2 wave">👋</span>
             Let&apos;s Talks
           </Button>
-
-          <Link target="_blank" href="https://www.noblespiritz.org/">
-            <HoverButton label="My Company" className="bg-gray-800 py-2" />
-          </Link>
+          {/* resume download button */}
+          <button className="" onClick={handleDownload}>
+            <HoverButton label="Download Resume" className="bg-gray-800 py-2" />
+          </button>
         </motion.div>
       </div>
 
