@@ -53,7 +53,9 @@ const Experiences = ({ experiences }: { experiences: TExperience[] }) => {
                   {experience.title}
                 </h3>
                 <h4 className="text-base mb-1">{experience.location}</h4>
-                <p className="text-sm mb-2">{experience.company_name}</p>
+                <p className="text-sm text-gray-300 mb-2">
+                  Typescript, Javascript, ReactJs, NodeJs
+                </p>
               </VerticalTimelineElement>
             );
           })}

@@ -20,11 +20,11 @@ const ProjectsPage = async () => {
         <title>portfolio page | my projects</title>
         <meta name="robots" content="index,follow" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@Nayan88888" />
-        <meta name="twitter:creator" content="@Nayan88888" />
+        <meta name="twitter:site" content="@imrannaaziremon" />
+        <meta name="twitter:creator" content="@imrannaaziremon" />
         <meta
           property="og:title"
-          content="Nayan chandrakar a professional web app developer"
+          content="Imran N. Emon a professional web app developer"
         />
       </Head>
 
