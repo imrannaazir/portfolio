@@ -13,8 +13,6 @@ type TProjectProps = {
   projects: TProject[];
 };
 const Projects: FC<TProjectProps> = ({ projects }) => {
-  console.log(projects);
-
   const router = useRouter();
   const { setpath } = useNavigation(
     (state) => ({

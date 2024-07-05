@@ -1,12 +1,14 @@
 import Container from "@components/container/Container";
 import About from "@components/pages/Home/About";
 import Aim from "@components/pages/Home/Aim";
+import Experiences from "@components/pages/Home/Experiences";
 import Hero from "@components/pages/Home/Hero";
 import OurModel from "@components/pages/Home/OurModel";
 import Projects from "@components/pages/Home/projects/Projects";
 import Review from "@components/pages/Home/Review";
 import Skills from "@components/pages/Home/Skills";
 import VirtualReality from "@components/pages/Home/VirtualReality";
+import { TSkill } from "@types";
 import dynamic from "next/dynamic";
 
 const baseUrl = process.env.NEXT_PUBLIC_DB_URL;
@@ -51,6 +53,7 @@ const page = async () => {
       <Projects projects={data?.projects} />
       <Skills skills={data?.projects} />
       <Review />
+      <Experiences experiences={data?.experience} />
       <About />
       <Calendly />
     </Container>
