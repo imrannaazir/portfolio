@@ -19,7 +19,7 @@ const Skills = ({ skills }: { skills: TSkill[] }) => {
   });
   const scaleTranslate = useTransform(scrollYProgress, [0, 1], ["20%", "0%"]);
   return (
-    <Container className="my-20">
+    <div className="my-10">
       <HeadingShortner
         title="Skills & Expertise"
         description="Here are the technologies and tools I specialize in to create impactful web applications."
@@ -29,9 +29,9 @@ const Skills = ({ skills }: { skills: TSkill[] }) => {
         id="service"
         style={{ opacity: scrollYProgress, translateY: scaleTranslate }}
         ref={ref}
-        className="  serviceBG bg-slate-600/20 ring-1 ring-blue-400/20 rounded-2xl  backdrop-blur-sm mt-16"
+        className="  serviceBG bg-slate-600/20 ring-1 ring-blue-400/20 rounded-2xl  backdrop-blur-sm mt-16 "
       >
-        <div className="grid items-center grid-cols-5 gap-6 p-5 font-medium text-center text-white services lg:m-6">
+        <div className="grid items-center grid-cols-5 gap-6 p-5 font-medium text-center text-white services lg:m-6 ">
           {skills?.map((data, index) => {
             const { _id, title, image } = data;
             return (
@@ -54,7 +54,7 @@ const Skills = ({ skills }: { skills: TSkill[] }) => {
           })}
         </div>
       </motion.section>
-    </Container>
+    </div>
   );
 };
 
