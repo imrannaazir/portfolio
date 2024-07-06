@@ -8,7 +8,11 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const baseUrl = process.env.NEXT_PUBLIC_DB_URL;
 async function getData(blogId: string) {
-  const blogRes = await fetch(`${baseUrl}/blogs/${blogId}`);
+  const blogRes = await fetch(`${baseUrl}/blogs/${blogId}`, {
+    next: {
+      revalidate: 5,
+    },
+  });
 
   if (!blogRes.ok) {
     throw new Error("Failed to fetch blogs");

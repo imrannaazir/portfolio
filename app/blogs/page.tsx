@@ -6,7 +6,11 @@ import { TBlog } from "@types";
 
 const baseUrl = process.env.NEXT_PUBLIC_DB_URL;
 async function getData() {
-  const blogRes = await fetch(`${baseUrl}/blogs/all`);
+  const blogRes = await fetch(`${baseUrl}/blogs/all`, {
+    next: {
+      revalidate: 5,
+    },
+  });
 
   if (!blogRes.ok) {
     throw new Error("Failed to fetch projects");

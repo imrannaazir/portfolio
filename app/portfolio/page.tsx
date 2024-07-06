@@ -2,7 +2,11 @@ import Head from "next/head";
 import Projects from "./components/projects";
 const baseUrl = process.env.NEXT_PUBLIC_DB_URL;
 async function getData() {
-  const projectRes = await fetch(`${baseUrl}/projects`);
+  const projectRes = await fetch(`${baseUrl}/projects`, {
+    next: {
+      revalidate: 5,
+    },
+  });
 
   if (!projectRes.ok) {
     throw new Error("Failed to fetch projects");

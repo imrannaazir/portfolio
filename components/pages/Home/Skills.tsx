@@ -5,9 +5,7 @@ import { TSkill } from "@types";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
-import { AimData } from "@constants/Aim";
 import { AnimationType } from "@components/animation/Motion";
-import Container from "@components/container/Container";
 import HeadingShortner from "@components/global/HeadingShortner";
 
 const Skills = ({ skills }: { skills: TSkill[] }) => {
@@ -33,7 +31,7 @@ const Skills = ({ skills }: { skills: TSkill[] }) => {
       >
         <div className="grid items-center grid-cols-5 gap-6 p-5 font-medium text-center text-white services lg:m-6 ">
           {skills?.map((data, index) => {
-            const { _id, title, image } = data;
+            const { _id, image, label } = data;
             return (
               <motion.div
                 key={_id}
@@ -48,7 +46,7 @@ const Skills = ({ skills }: { skills: TSkill[] }) => {
                     height={32}
                   />
                 </span>
-                <h1 className="text-sm font-bold">{title}</h1>
+                <h1 className="text-sm font-bold">{label}</h1>
               </motion.div>
             );
           })}

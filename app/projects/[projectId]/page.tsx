@@ -8,7 +8,11 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const baseUrl = process.env.NEXT_PUBLIC_DB_URL;
 async function getData(projectId: string) {
-  const projectRes = await fetch(`${baseUrl}/projects/${projectId}`);
+  const projectRes = await fetch(`${baseUrl}/projects/${projectId}`, {
+    next: {
+      revalidate: 5,
+    },
+  });
 
   if (!projectRes.ok) {
     throw new Error("Failed to fetch projects");
