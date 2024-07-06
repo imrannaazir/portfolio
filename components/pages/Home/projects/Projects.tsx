@@ -25,8 +25,6 @@ const Projects: FC<TProjectProps> = ({ projects }) => {
     setpath("/portfolio"), router?.push("/portfolio");
   };
 
-  const limit = 4;
-
   return (
     <section className="mt-16">
       <HeadingShortner
@@ -36,9 +34,7 @@ const Projects: FC<TProjectProps> = ({ projects }) => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-3">
         {projects?.map((data: TProject, index: number) => {
-          return limit == index + 1 ? null : (
-            <MapProjects key={data?._id} index={index} {...data} />
-          );
+          return <MapProjects key={data?._id} index={index} {...data} />;
         })}
       </div>
       <div className="text-center mt-6">

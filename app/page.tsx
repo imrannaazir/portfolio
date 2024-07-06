@@ -8,7 +8,6 @@ import Projects from "@components/pages/Home/projects/Projects";
 import Review from "@components/pages/Home/Review";
 import Skills from "@components/pages/Home/Skills";
 import VirtualReality from "@components/pages/Home/VirtualReality";
-import { TSkill } from "@types";
 import dynamic from "next/dynamic";
 
 const baseUrl = process.env.NEXT_PUBLIC_DB_URL;
@@ -55,7 +54,7 @@ const page = async () => {
   const Calendly = dynamic(() => import("@components/pages/Home/Calendly"));
 
   const data = await getData();
-  console.log({ skills: data?.skills });
+  console.log(data?.projects);
 
   return (
     <Container className="relative">
