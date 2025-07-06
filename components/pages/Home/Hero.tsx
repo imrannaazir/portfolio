@@ -9,9 +9,9 @@ import HoverButton from "@components/ui/button/HoverButton";
 import { useNavigation } from "@hooks/useNavigation";
 import resume from "../../../public/about/about.webp";
 
-interface HeroProps {}
+interface HeroProps { }
 
-const Hero: FC<HeroProps> = ({}) => {
+const Hero: FC<HeroProps> = ({ }) => {
   const [time, setTime] = useState(new Date());
   const { setIsOpen } = useNavigation((state) => ({
     setIsOpen: state.setIsOpen,
@@ -88,21 +88,19 @@ const Hero: FC<HeroProps> = ({}) => {
 
         <div className="relative h-fit w-full mt-8">
           <TextAnimation
-            text="I'm Imran N. Emon"
+            text="I'm Md. Emon Hossen"
             classNameDiv="flex justify-center lg:justify-start items-center"
-            delayTime={0}
           />
           <TextAnimation
             text="Your Web App Developer"
             classNameDiv="absolute inset-0 top-12 flex justify-center lg:justify-start items-center"
-            delayTime={1}
           />
         </div>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 3 }}
+          transition={{ duration: 0.4, }}
           className="font-light mt-20 leading-relaxed text-center lg:text-left tracking-wider lg:pb-12 text-white/60 description lg:text-xl"
         >
           {/*  To date, I&apos;ve developed{" "}
@@ -117,7 +115,7 @@ const Hero: FC<HeroProps> = ({}) => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 4 }}
+          transition={{ duration: 0.4, }}
           className="flex flex-row gap-3 justify-start mt-6 lg:mt-2 items-center"
         >
           <Button
@@ -138,7 +136,7 @@ const Hero: FC<HeroProps> = ({}) => {
       {/* grid two */}
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 100, transition: { delay: 2, duration: 0.4 } }}
+        animate={{ opacity: 100, transition: { duration: 0.4 } }}
         className="flex justify-center relative items-center overflow-hidden "
       >
         <motion.div
@@ -146,7 +144,7 @@ const Hero: FC<HeroProps> = ({}) => {
           animate={{
             y: 0,
             opacity: [10, 30, 60, 100],
-            transition: { delay: 2, duration: 0.4 },
+            transition: { duration: 0.4 },
           }}
           className=""
         >

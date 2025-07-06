@@ -1,32 +1,18 @@
 import Container from "@components/container/Container";
 import HeadingShortner from "@components/global/HeadingShortner";
+import { projectdetails } from "@constants/project";
 import { TProject } from "@types";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
-const baseUrl = process.env.NEXT_PUBLIC_DB_URL;
-async function getData(projectId: string) {
-  const projectRes = await fetch(`${baseUrl}/projects/${projectId}`, {
-    next: {
-      revalidate: 5,
-    },
-  });
-
-  if (!projectRes.ok) {
-    throw new Error("Failed to fetch projects");
-  }
-
-  const { data } = await projectRes.json();
-  return data;
-}
 const ProjectDetailsPage = async ({
   params,
 }: {
   params: { projectId: string };
 }) => {
-  const data: TProject = await getData(params?.projectId);
+  const data = projectdetails?.find((project) => project?.id === params?.projectId) as TProject
 
   return (
     <div>
@@ -39,13 +25,13 @@ const ProjectDetailsPage = async ({
         <meta name="twitter:creator" content="@imrannaaziremon" />
         <meta
           property="og:title"
-          content="Imran N. Emon a professional web app developer"
+          content="Md. Emon Hossen a professional web app developer"
         />
       </Head>
       <div className="relative">
         <Image
           src={
-            (data?.image?.url as string) ||
+            (data?.image) ||
             "https://studio.uxpincdn.com/studio/wp-content/uploads/2022/02/web-ui-design-examples-6.png.webp"
           }
           width={1280}
@@ -105,5 +91,4 @@ const ProjectDetailsPage = async ({
     </div>
   );
 };
-
 export default ProjectDetailsPage;

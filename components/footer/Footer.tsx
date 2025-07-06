@@ -28,6 +28,8 @@ const Footer = () => {
       path: "https://linkedin.com",
     },
   ];
+
+  const year = (new Date())?.getFullYear()
   return (
     <div className="backdrop-blur-[10px] text-white bg-opacity-0  bg-slate-600/20 ring-1 ring-blue-400/20">
       <Container className="py-10 space-y-6">
@@ -52,7 +54,7 @@ const Footer = () => {
           <div className="flex items-center gap-2 text-sm">
             <p className="text-center dark:text-gray-500">
               {" "}
-              &copy; 2024 Imran N. Emon All rights reserved
+              &copy; {year} Md. Emon Hossen | All rights reserved
             </p>
           </div>
           {/* social icons */}

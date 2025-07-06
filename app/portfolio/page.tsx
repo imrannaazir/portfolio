@@ -1,23 +1,6 @@
 import Head from "next/head";
 import Projects from "./components/projects";
-const baseUrl = process.env.NEXT_PUBLIC_DB_URL;
-async function getData() {
-  const projectRes = await fetch(`${baseUrl}/projects`, {
-    next: {
-      revalidate: 5,
-    },
-  });
-
-  if (!projectRes.ok) {
-    throw new Error("Failed to fetch projects");
-  }
-
-  const projectsData = await projectRes.json();
-  return projectsData;
-}
 const ProjectsPage = async () => {
-  const data = await getData();
-
   return (
     <div>
       <Head>
@@ -28,11 +11,11 @@ const ProjectsPage = async () => {
         <meta name="twitter:creator" content="@imrannaaziremon" />
         <meta
           property="og:title"
-          content="Imran N. Emon a professional web app developer"
+          content="Md. Emon Hossen a professional web app developer"
         />
       </Head>
 
-      <Projects projects={data?.data} />
+      <Projects />
     </div>
   );
 };

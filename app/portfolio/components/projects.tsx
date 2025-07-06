@@ -4,8 +4,9 @@ import MotionWrapper from "@components/animation/MotionWrapper";
 import MapProjects from "@components/pages/Home/projects/MapProjects";
 import Container from "@components/container/Container";
 import { TProject } from "@types";
+import { projectdetails } from "@constants/project";
 
-const Projects = ({ projects }: { projects: TProject[] }) => {
+const Projects = () => {
   return (
     <Container className="my-20">
       <HeadingShortner
@@ -14,8 +15,8 @@ const Projects = ({ projects }: { projects: TProject[] }) => {
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-3">
-        {projects?.map((data: TProject, index: number) => {
-          return <MapProjects key={data?._id} index={index} {...data} />;
+        {projectdetails?.map((data: TProject, index: number) => {
+          return <MapProjects key={index} index={index} {...data} />;
         })}
       </div>
     </Container>

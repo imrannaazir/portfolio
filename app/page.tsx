@@ -12,16 +12,6 @@ import dynamic from "next/dynamic";
 
 const baseUrl = process.env.NEXT_PUBLIC_DB_URL;
 async function getData() {
-  // projects
-  const projectRes = await fetch(`${baseUrl}/projects`, {
-    next: {
-      revalidate: 5,
-    },
-  });
-  if (!projectRes.ok) {
-    throw new Error("Failed to fetch projects");
-  }
-  const projectsData = await projectRes.json();
 
   // experiences
   const experienceRes = await fetch(`${baseUrl}/experiences/all`, {
@@ -44,7 +34,6 @@ async function getData() {
   }
   const skillsData = await skillsRes.json();
   return {
-    projects: projectsData?.data,
     experience: experienceData?.data,
     skills: skillsData?.data,
   };
@@ -54,15 +43,14 @@ const page = async () => {
   const Calendly = dynamic(() => import("@components/pages/Home/Calendly"));
 
   const data = await getData();
-  console.log(data?.projects);
-
+  console.log(JSON.stringify(data), '46 BLAH BLAH')
   return (
     <Container className="relative">
       <Hero />
       <VirtualReality />
       <OurModel />
       <Aim />
-      <Projects projects={data?.projects} />
+      <Projects />
       <Skills skills={data?.skills} />
       <Review />
       <Experiences experiences={data?.experience} />

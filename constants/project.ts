@@ -1,73 +1,57 @@
-import walkwise from "../public/projects/walkwise.jpeg"
-import dallie from "../public/projects/dallie.jpeg"
-import disney from "../public/projects/disney.jpeg"
-import movix from "../public/projects/movix.jpeg"
-import youtube from "../public/projects/youtube.jpeg"
-import airbnb from "../public/projects/airbnb.png"
-import admin from "../public/projects/admin.png"
-import store from "../public/projects/store.png"
-import humanAI from "../public/projects/ai_saas.jpg"
+import { TProject } from "@types"
 
-export type ProjectsType = {
-  id: number
-  image: any
-  site_url: string
-  projectName: string
-}
-
-export const projectdetails: ProjectsType[] = [
-    {
-    id: 7345643,
-    image: humanAI,
-    projectName: "Human AI Saas",
-    site_url: "https://human-ai-intelligence.vercel.app",
-  },
-   {
-    id: 34535745,
-    image: store,
-    projectName: "Ecommerce Store",
-    site_url: "https://nextjs-ecommerce-store-theta.vercel.app/",
-  },
-   {
-    id: 5774434,
-    image: admin,
-    projectName: "Scalable Admin panel",
-    site_url: "https://nextjs-ecommerce-admin-panel.vercel.app/",
-  },
-   {
-    id: 45894586847,
-    image: airbnb,
-    projectName: "Airbnb clone",
-    site_url: "https://airbnb-rent-clone.vercel.app/",
+export const projectdetails: TProject[] = [
+  {
+    id: "1", title: "Fast Mart",
+    description: "Fast Mart is an advanced e-commerce platform with a sleek, responsive UI, secure user auth, admin dashboard, and real-time notifications.",
+    liveLink: "https://fast-mart.vercel.app/",
+    clientGitHub: "https://github.com/imrannaazir/fast-mart/tree/main/store",
+    backendGitHub: "https://github.com/imrannaazir/fast-mart/tree/main/backend",
+    image: "https://res.cloudinary.com/dm6yrvvxj/image/upload/v1720266702/e-commerce/sptdgagjuty3vqxjgyb0.jpg",
+    technologies: ["Next.js", "Ant Design", "Tailwind CSS", "Express.js", "MongoDB", "Redux"]
   },
   {
-    id: 5735564384569,
-    image: walkwise,
-    projectName: "Ecommerce Shoe",
-    site_url: "https://walkwise-walkwise-000024.netlify.app/",
+    id: "2", title: "Fast Mart Admin",
+    description: "Fast Mart Admin is an intuitive admin panel for managing products, orders, users, analytics, and content for the Fast Mart platform.",
+    liveLink: "https://admin-imrannaaziremon.vercel.app/",
+    clientGitHub: "https://github.com/imrannaazir/fast-mart/tree/main/frontend",
+    backendGitHub: "https://github.com/imrannaazir/fast-mart/tree/main/backend",
+    image: "https://res.cloudinary.com/dm6yrvvxj/image/upload/v1737949411/Screenshot_2025-01-27_093615_qrphzj.png",
+    technologies: ["React", "Tailwind CSS", "ShadCN UI", "React Hook Form", "Express.js", "MongoDB"]
   },
   {
-    id: 97898589678,
-    image: dallie,
-    projectName: "Dallie-2 Open Ai",
-    site_url: "https://dallie-2-openai-stable-diffusion.netlify.app/",
+    id: "3", title: "JobsBd",
+    description: "JobsBD is a job portal connecting candidates, recruiters, and admins, with advanced search, notifications, and role-based dashboards.",
+    liveLink: "https://jobsbd.vercel.app/",
+    clientGitHub: "https://github.com/imrannaazir/jobsbd-web/",
+    backendGitHub: "https://github.com/imrannaazir/jobsbd-api",
+    image: "https://res.cloudinary.com/dm6yrvvxj/image/upload/v1737949878/Screenshot_2025-01-27_095024_as46qn.png",
+    technologies: ["TypeScript", "Next.js", "Shadcn UI", "Tailwind CSS", "Redux Toolkit", "Zod", "Express.js", "Prisma", "PostgreSQL"]
   },
   {
-    id: 8378745736,
-    image: movix,
-    projectName: "Movix website",
-    site_url: "https://movix-clone-hosting-6a9c7.web.app/",
+    id: "4", title: "TraceBack",
+    description: "TraceBack is a community-driven platform to report and reclaim lost items, featuring real-time updates, admin controls, and ownership verification.",
+    liveLink: "https://traceback-beige.vercel.app/",
+    clientGitHub: "https://github.com/imrannaazir/trace-back/tree/main/view",
+    backendGitHub: "https://github.com/imrannaazir/trace-back/tree/main/api",
+    image: "https://res.cloudinary.com/dm6yrvvxj/image/upload/v1720265661/e-commerce/be21sw5qtkaax67lo1gv.jpg",
+    technologies: ["Next.js", "Tailwind CSS", "Redux", "Express.js", "Prisma", "PostgreSQL", "Cloudinary"]
   },
   {
-    id: 94587845756,
-    image: youtube,
-    projectName: "Youtube clone",
-    site_url: "https://clone-372007.web.app/",
+    id: "5", title: "GlossaryFy",
+    description: "GlossaryFy is a modern e-commerce platform with dynamic product filtering, secure payments via Stripe, and Firebase Auth.",
+    liveLink: "https://glossary-fy.vercel.app/",
+    clientGitHub: "https://github.com/imrannaazir/store",
+    image: "https://res.cloudinary.com/dm6yrvvxj/image/upload/v1720263062/e-commerce/mkphce1fsesgeve6ieye.jpg",
+    technologies: ["Next.js", "React.js", "Tailwind CSS", "Font Awesome", "Node.js", "Express.js", "MongoDB", "Stripe", "Firebase"]
   },
   {
-    id: 906789568856,
-    image: disney,
-    projectName: "Disney + clone",
-    site_url: "https://disneypluse.firebaseapp.com/",
+    id: "6", title: "OutTel - Manufacturers Website",
+    description: "OutTel Tech is a manufacturer website with admin/user dashboards, secure payments, order tracking, and profile management.",
+    liveLink: "https://outtel-tech.web.app/",
+    clientGitHub: "https://github.com/imrannaazir/outtel-public",
+    backendGitHub: "https://github.com/imrannaazir/outtel",
+    image: "https://res.cloudinary.com/dm6yrvvxj/image/upload/v1720262127/e-commerce/umfonzuztrdtaa7fqcjc.jpg",
+    technologies: ["HTML5", "CSS3", "Tailwind CSS", "Daisy UI", "Firebase Auth", "React.js", "React Query", "Node.js", "Express.js", "MongoDB"]
   }
 ]

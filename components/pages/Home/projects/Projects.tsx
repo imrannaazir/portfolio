@@ -7,12 +7,9 @@ import MapProjects from "./MapProjects";
 import { shallow } from "zustand/shallow";
 import { useNavigation } from "@hooks/useNavigation";
 import { useRouter } from "next/navigation";
-import { projectdetails, ProjectsType } from "@constants/project";
 import { TProject } from "@types";
-type TProjectProps = {
-  projects: TProject[];
-};
-const Projects: FC<TProjectProps> = ({ projects }) => {
+import { projectdetails } from "@constants/project";
+const Projects = () => {
   const router = useRouter();
   const { setpath } = useNavigation(
     (state) => ({
@@ -26,15 +23,15 @@ const Projects: FC<TProjectProps> = ({ projects }) => {
   };
 
   return (
-    <section className="mt-16">
+    <section id="portfolio" className="mt-16">
       <HeadingShortner
         title="Projects I’ve done"
         description="I build Web Applications that bring positive results to businesses. Check out a few of my projects."
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-3">
-        {projects?.map((data: TProject, index: number) => {
-          return <MapProjects key={data?._id} index={index} {...data} />;
+        {projectdetails?.map((data: TProject, index: number) => {
+          return <MapProjects key={data?.id} index={index} {...data} />;
         })}
       </div>
       <div className="text-center mt-6">

@@ -28,7 +28,7 @@ const About: FC = () => {
             <div className="flex-1 mx-5 font-sans text-white lg:mb-0 aboutText">
               <h1 className="my-5 text-3xl font-bold lg:5xl">About Me</h1>
               <p className="font-light leading-relaxed tracking-wide opacity-75">
-                This is Imran Naazir Emon, a MERN Stack Developer from{" "}
+                This is Md. Emon Hossen, a MERN Stack Developer from{" "}
                 <span>Bangladesh</span>. I&apos;ve self-taught all the tech
                 stacks I use, such as React JS, Redux, Next.js, and Tailwind
                 CSS. ✌<br />

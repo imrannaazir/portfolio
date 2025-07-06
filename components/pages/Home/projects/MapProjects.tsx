@@ -10,7 +10,7 @@ interface MapProjectsProps extends TProject {
   index: number;
 }
 
-const MapProjects: FC<MapProjectsProps> = ({ index, image, title, _id }) => {
+const MapProjects: FC<MapProjectsProps> = ({ index, image, title, id }) => {
   return (
     <motion.div
       variants={AnimationType("up", "spring", index * 0.5, 0.75)}
@@ -19,7 +19,7 @@ const MapProjects: FC<MapProjectsProps> = ({ index, image, title, _id }) => {
       <div className="p-2">
         <Image
           alt="project-image"
-          src={image?.url as string}
+          src={image}
           width={10}
           height={10}
           className="w-full h-full rounded-[10px]"
@@ -29,7 +29,7 @@ const MapProjects: FC<MapProjectsProps> = ({ index, image, title, _id }) => {
       <div className="flex items-center justify-between px-2 py-3">
         <p className="text-sm font-bold text-center text-white">{title}</p>
 
-        <Link href={`/projects/${_id}`}>
+        <Link href={`/projects/${id}`}>
           <HoverButton
             labelclassName="text-sm font-medium antialiased"
             label="View Project"
