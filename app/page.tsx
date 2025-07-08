@@ -8,42 +8,14 @@ import Projects from "@components/pages/Home/projects/Projects";
 import Review from "@components/pages/Home/Review";
 import Skills from "@components/pages/Home/Skills";
 import VirtualReality from "@components/pages/Home/VirtualReality";
+import { experiences } from "@constants/experience";
+import { skills } from "@constants/skills";
 import dynamic from "next/dynamic";
 
-const baseUrl = process.env.NEXT_PUBLIC_DB_URL;
-async function getData() {
-
-  // experiences
-  const experienceRes = await fetch(`${baseUrl}/experiences/all`, {
-    next: {
-      revalidate: 5,
-    },
-  });
-  if (!experienceRes.ok) {
-    throw new Error("Failed to fetch experiences");
-  }
-  const experienceData = await experienceRes.json();
-  // skills
-  const skillsRes = await fetch(`${baseUrl}/skills/get-all`, {
-    next: {
-      revalidate: 5,
-    },
-  });
-  if (!skillsRes.ok) {
-    throw new Error("Failed to fetch skills");
-  }
-  const skillsData = await skillsRes.json();
-  return {
-    experience: experienceData?.data,
-    skills: skillsData?.data,
-  };
-}
 
 const page = async () => {
   const Calendly = dynamic(() => import("@components/pages/Home/Calendly"));
 
-  const data = await getData();
-  console.log(JSON.stringify(data), '46 BLAH BLAH')
   return (
     <Container className="relative">
       <Hero />
@@ -51,9 +23,9 @@ const page = async () => {
       <OurModel />
       <Aim />
       <Projects />
-      <Skills skills={data?.skills} />
+      <Skills skills={skills} />
       <Review />
-      <Experiences experiences={data?.experience} />
+      <Experiences experiences={experiences} />
       <About />
       <Calendly />
     </Container>

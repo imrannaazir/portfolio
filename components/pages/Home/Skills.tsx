@@ -40,7 +40,7 @@ const Skills = ({ skills }: { skills: TSkill[] }) => {
               >
                 <span className="flex justify-center items-center mb-4">
                   <Image
-                    src={image?.url as string}
+                    src={image}
                     alt="image-Not"
                     width={40}
                     height={40}
