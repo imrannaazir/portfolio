@@ -9,6 +9,7 @@ import { useNavigation } from "@hooks/useNavigation";
 import { useRouter } from "next/navigation";
 import { TProject } from "@types";
 import { projectdetails } from "@constants/project";
+import ProjectCard from "./project-card";
 const Projects = () => {
   const router = useRouter();
   const { setpath } = useNavigation(
@@ -29,9 +30,9 @@ const Projects = () => {
         description="I build Web Applications that bring positive results to businesses. Check out a few of my projects."
       />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 mt-3">
+      <div className="grid grid-cols-1 lg:grid-cols-2 mt-3 gap-6">
         {projectdetails?.map((data: TProject, index: number) => {
-          return <MapProjects key={data?.id} index={index} {...data} />;
+          return <ProjectCard key={data?.id} index={index} {...data} />;
         })}
       </div>
       <div className="text-center mt-6">

@@ -33,9 +33,9 @@ const Footer = () => {
   return (
     <div className="backdrop-blur-[10px] text-white bg-opacity-0  bg-slate-600/20 ring-1 ring-blue-400/20">
       <Container className="py-10 space-y-6">
-        <div className="w-full flex justify-between ">
+        <div className="w-full flex md:justify-between space-y-3 justify-center items-center flex-col md:flex-row">
           {/* logo */}
-          <div>
+          <div className="flex items-center justify-center md:items-start flex-col space-y-3">
             <div className="text-4xl">
               <Image
                 className="rounded-3xl scale-110"
