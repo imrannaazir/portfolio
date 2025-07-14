@@ -3,8 +3,10 @@ import { FC, useState } from "react";
 import { AnimationType } from "@components/animation/Motion";
 import HoverButton from "@components/ui/button/HoverButton";
 import { TProject } from "@types";
-import { ExternalLink, Calendar, Code2 } from "lucide-react";
+import { Code2 } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 interface ProjectCardProps extends TProject {
   index: number;
@@ -20,16 +22,12 @@ const ProjectCard: FC<ProjectCardProps> = ({
   category = "Fullstack",
   technologies = [],
   status = "Completed",
-  onViewProject
+  clientGitHub,
+  liveLink,
+  backendGitHub,
 }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-
-  const handleViewProject = () => {
-    if (onViewProject) {
-      onViewProject(id);
-    }
-  };
 
   const getStatusColor = (status?: string) => {
     switch (status) {
@@ -49,7 +47,6 @@ const ProjectCard: FC<ProjectCardProps> = ({
       variants={AnimationType("up", "spring", index * 0.1, 0.6)}
       initial="hidden"
       animate="show"
-      whileHover={{ y: -8, scale: 1.02 }}
       className="group relative"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -201,13 +198,13 @@ const ProjectCard: FC<ProjectCardProps> = ({
               {technologies.slice(0, 3).map((tech, index) => (
                 <span
                   key={index}
-                  className="px-2 py-1 text-xs font-medium rounded-md bg-slate-700/50 text-slate-300 border border-slate-600/50"
+                  className="px-2 py-1 text-xs font-medium rounded-lg bg-slate-700/50 text-slate-300 border border-slate-600/50"
                 >
                   {tech}
                 </span>
               ))}
               {technologies.length > 3 && (
-                <span className="px-2 py-1 text-xs font-medium rounded-md bg-slate-700/50 text-slate-400 border border-slate-600/50">
+                <span className="px-2 py-1 text-xs font-medium rounded-lg bg-slate-700/50 text-slate-400 border border-slate-600/50">
                   +{technologies.length - 3}
                 </span>
               )}
@@ -220,12 +217,13 @@ const ProjectCard: FC<ProjectCardProps> = ({
               <Code2 size={14} />
               <span>Project</span>
             </div>
+            <Link href={liveLink} target="_blank">
 
-            <HoverButton
-              labelclassName="text-sm font-medium text-white flex items-center gap-2"
-              label="View Project" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-xl px-4 py-2 shadow-lg hover:shadow-xl transition-all duration-300"
-              onClick={handleViewProject}
-            />
+              <HoverButton
+                labelclassName="text-sm font-medium text-white flex items-center gap-2"
+                label="View Project"
+              />
+            </Link>
           </div>
         </div>
 

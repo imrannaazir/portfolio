@@ -1,9 +1,7 @@
 "use client";
-import { FC } from "react";
 import HoverButton from "@components/ui/button/HoverButton";
 import HeadingShortner from "@components/global/HeadingShortner";
 import MotionWrapper from "@components/animation/MotionWrapper";
-import MapProjects from "./MapProjects";
 import { shallow } from "zustand/shallow";
 import { useNavigation } from "@hooks/useNavigation";
 import { useRouter } from "next/navigation";
