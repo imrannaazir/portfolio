@@ -7,7 +7,8 @@ export type TProject = {
   title: string;
   description: string;
   liveLink: string;
-  clientGitHub: string;
+  github?: string;
+  clientGitHub?: string;
   backendGitHub?: string;
   image: string;
   technologies: string[];

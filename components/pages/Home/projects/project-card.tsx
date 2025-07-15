@@ -7,6 +7,7 @@ import { Code2 } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import GithubButton from "./github-button";
 
 interface ProjectCardProps extends TProject {
   index: number;
@@ -25,6 +26,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
   clientGitHub,
   liveLink,
   backendGitHub,
+  github
 }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -213,11 +215,25 @@ const ProjectCard: FC<ProjectCardProps> = ({
 
           {/* Action Button */}
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2 text-slate-400 text-sm">
-              <Code2 size={14} />
-              <span>Project</span>
+
+            <div className="flex items-center gap-2">
+              {
+                github &&
+                <GithubButton href={github} title="Source" />
+              }
+              {
+                clientGitHub &&
+                <GithubButton href={clientGitHub} title="Client" />
+              }{
+                backendGitHub &&
+                <GithubButton href={backendGitHub} title="Server" />
+              }{
+                !clientGitHub && !backendGitHub && !github &&
+                <GithubButton href={""} title="Private" />
+              }
+
             </div>
-            <Link href={liveLink} target="_blank">
+            <Link href={liveLink} target="_blank" className="ml-auto">
 
               <HoverButton
                 labelclassName="text-sm font-medium text-white flex items-center gap-2"

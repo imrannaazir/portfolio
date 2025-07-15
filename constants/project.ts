@@ -5,17 +5,22 @@ export const projectdetails: TProject[] = [
     id: "1", title: "Fast Mart",
     description: "Fast Mart is an advanced e-commerce platform with a sleek, responsive UI, secure user auth, admin dashboard, and real-time notifications.",
     liveLink: "https://fast-mart.vercel.app/",
-    clientGitHub: "https://github.com/imrannaazir/fast-mart/tree/main/store",
-    backendGitHub: "https://github.com/imrannaazir/fast-mart/tree/main/backend",
+    github: "https://github.com/imrannaazir/fast-mart",
     image: "https://res.cloudinary.com/dm6yrvvxj/image/upload/v1720266702/e-commerce/sptdgagjuty3vqxjgyb0.jpg",
     technologies: ["Next.js", "Ant Design", "Tailwind CSS", "Express.js", "MongoDB", "Redux"]
   },
   {
     id: "2", title: "Fast Mart Admin",
     description: "Fast Mart Admin is an intuitive admin panel for managing products, orders, users, analytics, and content for the Fast Mart platform.",
-    liveLink: "https://admin-imrannaaziremon.vercel.app/",
-    clientGitHub: "https://github.com/imrannaazir/fast-mart/tree/main/frontend",
-    backendGitHub: "https://github.com/imrannaazir/fast-mart/tree/main/backend",
+    liveLink: "https://admin-fastmart.vercel.app",
+    github: "https://github.com/imrannaazir/fast-mart",
+    image: "https://res.cloudinary.com/dm6yrvvxj/image/upload/v1737949411/Screenshot_2025-01-27_093615_qrphzj.png",
+    technologies: ["React", "Tailwind CSS", "ShadCN UI", "React Hook Form", "Express.js", "MongoDB"]
+  },
+  {
+    id: "7", title: "WeRWealthy",
+    description: "Fast Mart Admin is an intuitive admin panel for managing products, orders, users, analytics, and content for the Fast Mart platform.",
+    liveLink: "https://admin-fastmart.vercel.app",
     image: "https://res.cloudinary.com/dm6yrvvxj/image/upload/v1737949411/Screenshot_2025-01-27_093615_qrphzj.png",
     technologies: ["React", "Tailwind CSS", "ShadCN UI", "React Hook Form", "Express.js", "MongoDB"]
   },
@@ -32,8 +37,7 @@ export const projectdetails: TProject[] = [
     id: "4", title: "TraceBack",
     description: "TraceBack is a community-driven platform to report and reclaim lost items, featuring real-time updates, admin controls, and ownership verification.",
     liveLink: "https://traceback-beige.vercel.app/",
-    clientGitHub: "https://github.com/imrannaazir/trace-back/tree/main/view",
-    backendGitHub: "https://github.com/imrannaazir/trace-back/tree/main/api",
+    github: "https://github.com/imrannaazir/trace-back",
     image: "https://res.cloudinary.com/dm6yrvvxj/image/upload/v1720265661/e-commerce/be21sw5qtkaax67lo1gv.jpg",
     technologies: ["Next.js", "Tailwind CSS", "Redux", "Express.js", "Prisma", "PostgreSQL", "Cloudinary"]
   },
