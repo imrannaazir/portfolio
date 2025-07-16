@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 		siteName: "Md Emon Hossen's Portfolio",
 		images: [
 			{
-				url: "/public/logos/placeholder.png",
+				url: "/logos/placeholder.png",
 				width: 1200,
 				height: 630,
 				alt: "Contact Md Emon Hossen",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		title: "Contact Md Emon Hossen",
 		description: "Connect with Md Emon Hossen via email or schedule a meet.",
-		images: ["/public/logos/placeholder.png"],
+		images: ["/logos/placeholder.png"],
 		creator: "@your_twitter_handle", // dummy
 		creatorId: "@your_twitter_handle", // dummy
 		site: "@your_twitter_handle", // dummy

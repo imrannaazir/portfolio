@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 		siteName: "Md Emon Hossen's Portfolio",
 		images: [
 			{
-				url: "/public/logos/placeholder.png",
+				url: "/logos/placeholder.png",
 				width: 1200,
 				height: 630,
 				alt: "Md Emon Hossen's Projects",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 		title: "Md Emon Hossen's Projects",
 		description:
 			"Explore a variety of projects and open-source contributions by Md Emon Hossen.",
-		images: ["/public/logos/placeholder.png"],
+		images: ["/logos/placeholder.png"],
 		creator: "@your_twitter_handle", // dummy
 		creatorId: "@your_twitter_handle", // dummy
 		site: "@your_twitter_handle", // dummy
@@ -45,7 +45,7 @@ const projectsData = (myData.projects || [
 	},
 ]).map((project, idx) => ({
 	project: project.name || `Dummy Project ${idx+1}`,
-	logo: "/public/logos/placeholder.png",
+	logo: "/logos/placeholder.png",
 	description: project.description || "Dummy description.",
 	technologies: project.technologies || ["Tech1", "Tech2"],
 	website: (project.links && project.links.live) || "#",

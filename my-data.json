@@ -141,12 +141,12 @@
       },
       {
         "field": "project.logo",
-        "used": "/public/logos/placeholder.png",
+        "used": "/logos/placeholder.png",
         "note": "Replace with your real project/company logo URLs. Used in projects, resume, and blog."
       },
       {
         "field": "coverImage/ogImage in blog posts",
-        "used": "/public/logos/placeholder.png",
+        "used": "/logos/placeholder.png",
         "note": "Replace with your real blog post cover images."
       },
       {

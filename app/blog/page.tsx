@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 		siteName: "Md Emon Hossen's Portfolio",
 		images: [
 			{
-				url: "/public/logos/placeholder.png",
+				url: "/logos/placeholder.png",
 				width: 1200,
 				height: 630,
 				alt: "Md Emon Hossen's Blog",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 		title: "Md Emon Hossen's Blog",
 		description:
 			"Read blog posts on engineering, design, and product development by Md Emon Hossen.",
-		images: ["/public/logos/placeholder.png"],
+		images: ["/logos/placeholder.png"],
 		creator: "@your_twitter_handle", // dummy
 		creatorId: "@your_twitter_handle", // dummy
 		site: "@your_twitter_handle", // dummy

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 			"Detailed resume of Md Emon Hossen, MERN Stack Developer, with work experience, projects, and educational background.",
 		images: [
 			{
-				url: "/public/logos/placeholder.png",
+				url: "/logos/placeholder.png",
 				width: 1200,
 				height: 630,
 				alt: "Md Emon Hossen's Resume",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 		title: "Md Emon Hossen's Resume",
 		description:
 			"Check out Md Emon Hossen’s MERN Stack Developer resume, showcasing professional contributions and achievements.",
-		images: ["/public/logos/placeholder.png"],
+		images: ["/logos/placeholder.png"],
 		creator: "@your_twitter_handle", // dummy
 		creatorId: "@your_twitter_handle", // dummy
 		site: "@your_twitter_handle", // dummy
@@ -48,7 +48,7 @@ const resumeData = {
 		},
 	]).map((exp, idx) => ({
 		company: exp.company || `Dummy Company ${idx+1}`,
-		logo: "/public/logos/placeholder.png",
+		logo: "/logos/placeholder.png",
 		role: exp.position || "Dummy Position",
 		period: exp.duration || "Dummy Duration",
 		location: exp.location || "Dummy Location",
@@ -60,7 +60,7 @@ const resumeData = {
 	education: myData.education || [
 		{
 			institution: "Dummy Institution",
-			logo: "/public/logos/placeholder.png",
+			logo: "/logos/placeholder.png",
 			degree: "Dummy Degree",
 			period: "Dummy Period",
 			location: "Dummy Location",
@@ -69,7 +69,7 @@ const resumeData = {
 	volunteering: myData.volunteering || [
 		{
 			organization: "Dummy Organization",
-			logo: "/public/logos/placeholder.png",
+			logo: "/logos/placeholder.png",
 			role: "Dummy Role",
 			period: "Dummy Period",
 			location: "Dummy Location",

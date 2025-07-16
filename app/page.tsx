@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "Md Emon Hossen's Portfolio",
     images: [
       {
-        url: "/public/logos/placeholder.png", // placeholder image
+        url: "/logos/placeholder.png", // placeholder image
         height: 630,
         alt: "Md Emon Hossen",
       },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Md Emon Hossen",
     description:
       "This is Md. Emon Hossen, a MERN Stack Developer from Bangladesh. I've self-taught all the tech stacks I use, such as React JS, Redux, Next.js, and Tailwind CSS. ✌",
-    images: ["/public/logos/placeholder.png"],
+    images: ["/logos/placeholder.png"],
     creator: "@your_twitter_handle", // dummy
     creatorId: "@your_twitter_handle", // dummy
     site: "@your_twitter_handle", // dummy
@@ -59,7 +59,7 @@ export default function Page() {
           <span className="not-prose">
             <Badge href="https://www.techforing.com/">
               <Image
-                src="/public/logos/placeholder.png"
+                src="/logos/placeholder.png"
                 alt="TechForing Ltd"
                 height={16}
                 width={16}
@@ -72,7 +72,7 @@ export default function Page() {
           <span className="not-prose">
             <Badge href="https://dignityofnoble.org/">
               <Image
-                src="/public/logos/placeholder.png"
+                src="/logos/placeholder.png"
                 alt="Dignity Of Noble"
                 height={16}
                 width={16}

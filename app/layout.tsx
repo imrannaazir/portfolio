@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 		type: "website",
 		images: [
 			{
-				url: "/public/logos/placeholder.png",
+				url: "/logos/placeholder.png",
 				width: 1200,
 				height: 630,
 				alt: "Md Emon Hossen Full Stack Developer",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 		siteId: "@your_twitter_handle", // dummy
 		description:
 			"This is Md. Emon Hossen, a MERN Stack Developer from Bangladesh. I've self-taught all the tech stacks I use, such as React JS, Redux, Next.js, and Tailwind CSS.",
-		images: ["/public/logos/placeholder.png"],
+		images: ["/logos/placeholder.png"],
 	},
 	icons: {
 		icon: [
