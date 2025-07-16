@@ -8,33 +8,33 @@ import Separator from "../components/separator";
 export const metadata: Metadata = {
 	title: "Blog",
 	description:
-		"Read my thoughts on engineering, design, and product development.",
+		"Read thoughts on engineering, design, and product development by Md Emon Hossen.",
 	openGraph: {
-		title: "Ayush Chugh's Blog",
+		title: "Md Emon Hossen's Blog",
 		description:
-			"Explore blog posts on engineering, design, and product development.",
-		url: "https://ayushchugh.com/blog",
-		siteName: "Ayush Chugh's Portfolio",
+			"Explore blog posts on engineering, design, and product development by Md Emon Hossen.",
+		url: "https://imrannaaziremon.vercel.app/blog",
+		siteName: "Md Emon Hossen's Portfolio",
 		images: [
 			{
-				url: "https://cdn.ayushchugh.com/open-graph/business-card.png",
+				url: "/public/logos/placeholder.png",
 				width: 1200,
 				height: 630,
-				alt: "Ayush Chugh's Blog",
+				alt: "Md Emon Hossen's Blog",
 			},
 		],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Ayush Chugh's Blog",
+		title: "Md Emon Hossen's Blog",
 		description:
-			"Read blog posts on engineering, design, and product development.",
-		images: ["https://cdn.ayushchugh.com/open-graph/business-card.png"],
-		creator: "@aayushchugh_x",
-		creatorId: "@aayushchugh_x",
-		site: "@aayushchugh_x",
-		siteId: "@aayushchugh_x",
+			"Read blog posts on engineering, design, and product development by Md Emon Hossen.",
+		images: ["/public/logos/placeholder.png"],
+		creator: "@your_twitter_handle", // dummy
+		creatorId: "@your_twitter_handle", // dummy
+		site: "@your_twitter_handle", // dummy
+		siteId: "@your_twitter_handle", // dummy
 	},
 };
 

@@ -6,34 +6,34 @@ import type { Metadata } from "next";
 import Separator from "./components/separator";
 
 export const metadata: Metadata = {
-  title: "Ayush Chugh",
+  title: "Md Emon Hossen",
   description:
-    "I'm a Full Stack Web Developer from India, trying to make the internet a bit cooler one website at a time.",
+    "This is Md. Emon Hossen, a MERN Stack Developer from Bangladesh. I've self-taught all the tech stacks I use, such as React JS, Redux, Next.js, and Tailwind CSS. ✌",
   openGraph: {
-    title: "Ayush Chugh",
+    title: "Md Emon Hossen",
     description:
-      "I'm a Full Stack Web Developer from India, trying to make the internet a bit cooler one website at a time.",
-    url: "https://ayushchugh.com",
-    siteName: "Ayush Chugh's Portfolio",
+      "This is Md. Emon Hossen, a MERN Stack Developer from Bangladesh. I've self-taught all the tech stacks I use, such as React JS, Redux, Next.js, and Tailwind CSS. ✌",
+    url: "https://imrannaaziremon.vercel.app/",
+    siteName: "Md Emon Hossen's Portfolio",
     images: [
       {
-        url: "https://cdn.ayushchugh.com/open-graph/business-card.png",
+        url: "/public/logos/placeholder.png", // placeholder image
         height: 630,
-        alt: "Ayush Chugh",
+        alt: "Md Emon Hossen",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ayush Chugh",
+    title: "Md Emon Hossen",
     description:
-      "I'm a Full Stack Web Developer from India, trying to make the internet a bit cooler one website at a time.",
-    images: ["https://cdn.ayushchugh.com/open-graph/business-card.png"],
-    creator: "@aayushchugh_x",
-    creatorId: "@aayushchugh_x",
-    site: "@aayushchugh_x",
-    siteId: "@aayushchugh_x",
+      "This is Md. Emon Hossen, a MERN Stack Developer from Bangladesh. I've self-taught all the tech stacks I use, such as React JS, Redux, Next.js, and Tailwind CSS. ✌",
+    images: ["/public/logos/placeholder.png"],
+    creator: "@your_twitter_handle", // dummy
+    creatorId: "@your_twitter_handle", // dummy
+    site: "@your_twitter_handle", // dummy
+    siteId: "@your_twitter_handle", // dummy
   },
 };
 
@@ -42,11 +42,10 @@ export default function Page() {
     <section>
       <header className="mb-6">
         <h1 className='font-medium text-2xl mb-2 tracking-tight font-["monospace"]'>
-          Sup, I'm Emon👋
+          Sup, I'm Md Emon Hossen👋
         </h1>
         <p className="text-lg prose prose-neutral dark:prose-invert">
-          I'm a Full Stack Web Developer from Jashore, Bangladesh trying to make
-          the internet a bit cooler one website at a time.
+          This is Md. Emon Hossen, a MERN Stack Developer from Bangladesh. I've self-taught all the tech stacks I use, such as React JS, Redux, Next.js, and Tailwind CSS. ✌
         </p>
       </header>
 
@@ -56,72 +55,45 @@ export default function Page() {
         <h2>Professional Work</h2>
         <p>
           I specialize in creating user-friendly digital experiences. Currently,
-          I work as a <strong>Full Stack Developer</strong> at{" "}
+          I work as a <strong>Frontend Developer</strong> at
           <span className="not-prose">
-            <Badge href="https://avenue.tickets/">
+            <Badge href="https://www.techforing.com/">
               <Image
-                src={"https://cdn.ayushchugh.com/logos/avenue.jpeg"}
-                alt="Avenue Ticketing"
+                src="/public/logos/placeholder.png"
+                alt="TechForing Ltd"
                 height={16}
                 width={16}
                 className={"pr-1"}
               />
-              Avenue Ticketing
-            </Badge>
-          </span>{" "}
-          where we're building a ticketing platform for event organizers and
-          attendees. I also work as a <strong>Frontend Developer</strong> with{" "}
-          <span className="not-prose">
-            <Badge href="https://www.linkedin.com/company/vibraniumsoft/posts/?feedView=all">
-              <Image
-                src={"https://cdn.ayushchugh.com/logos/vibraniumsoft.jpeg"}
-                alt="Vibranium Soft"
-                height={16}
-                width={16}
-                className={"pr-1"}
-              />
-              Vibranium Soft
-            </Badge>
-          </span>{" "}
-          where we are building a flight booking project.
-        </p>
-        <p>
-          Previously, I worked with{" "}
-          <span className="not-prose">
-            <Badge href="https://tapinvest.in/">
-              <Image
-                src={"https://cdn.ayushchugh.com/logos/tapico.png"}
-                alt="Tap Invest"
-                height={16}
-                width={16}
-                className={"pr-1"}
-              />
-              Tap Invest
+              TechForing Ltd
             </Badge>
           </span>
-          , where I developed admin dashboards and created landing pages for
-          their investment platform. For more details about my experience, check
-          out my <Link href="/resume">resume</Link>.
+          where we're building modern web applications. I also worked as a <strong>Full Stack Developer</strong> at
+          <span className="not-prose">
+            <Badge href="https://dignityofnoble.org/">
+              <Image
+                src="/public/logos/placeholder.png"
+                alt="Dignity Of Noble"
+                height={16}
+                width={16}
+                className={"pr-1"}
+              />
+              Dignity Of Noble
+            </Badge>
+          </span>
+          . For more details about my experience, check out my <Link href="/resume">resume</Link>.
         </p>
       </div>
 
       <Separator />
 
       <div className="mb-8 prose prose-neutral dark:prose-invert">
-        <h2>Leadership & Community</h2>
+        <h2>About Me</h2>
         <p>
-          As the Team Lead at the Innovation Club of{" "}
-          <a href="https://ccetdiploma.edu.in/" target="_blank">
-            CCET College
-          </a>
-          , I've learned how to lead a team and stay organized. I also assist in{" "}
-          <a href="https://chdtechnicaleducation.gov.in/" target="_blank">
-            ICT
-          </a>{" "}
-          training sessions, teaching government employees essential computer
-          skills. Additionally, I help organize the <i>Talent Hunt</i> cultural
-          program and serve as the student coordinator for <i>Jhalak</i>, our
-          college's digital newsletter.
+          This is Md. Emon Hossen, a MERN Stack Developer from Bangladesh. I've self-taught all the tech stacks I use, such as React JS, Redux, Next.js, and Tailwind CSS. ✌<br /> <br />
+          I consider myself fortunate to be able to develop and optimize web applications for a living. My deep interest in the web platform and SaaS products drives me to create results-driven digital solutions for my clients while becoming part of meaningful businesses along the way. <br /> <br />
+          I've developed over 50 websites and worked closely with the founders of various startups. In addition, I've committed my time to three startups full-time, assisting them in hiring and managing their technical teams. I am excited to become a part of your journey. <br /> <br />
+          Recently, I developed a digital marketing platform called The Run Digital. We help entrepreneurs define and achieve their web goals through our web-based solutions. We are driven by key performance indicators (KPIs) to ensure success.
         </p>
       </div>
 
@@ -130,9 +102,7 @@ export default function Page() {
       <div className="mb-8 prose prose-neutral dark:prose-invert">
         <h2>Personal Interests</h2>
         <p>
-          Outside of work, I enjoy exploring Vedic astrology, playing the
-          guitar, and spending time with friends. I'm also pursuing a diploma in
-          Computer Science Engineering (CSE).
+          Outside of work, I enjoy learning new technologies, reading tech blogs, and collaborating with other developers. (dummy)
         </p>
       </div>
 
@@ -158,7 +128,7 @@ export default function Page() {
             className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/aayushchugh_x"
+            href="https://github.com/imrannaazir"
           >
             <ArrowIcon />
             <p className="h-7 ml-2">Follow me</p>
@@ -171,11 +141,11 @@ export default function Page() {
           className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all text-neutral-600 dark:text-neutral-300 mt-3"
           rel="noopener noreferrer"
           target="_blank"
-          href="mailto:hey@ayushchugh.com?subject=Hello Ayush!"
+          href="mailto:imrannaaziremon@gmail.com?subject=Hello Emon!"
         >
           <p className="h-7">
             <span className="mr-2 text-neutral-600">📧</span>
-            hey@ayushchugh.com
+            imrannaaziremon@gmail.com
           </p>
         </a>
       </div>

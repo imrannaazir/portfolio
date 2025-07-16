@@ -1,106 +1,55 @@
 import type { Metadata } from "next";
 import ProjectCard from "../components/project-card";
+import myData from '../../my-data.json';
 
 export const metadata: Metadata = {
 	title: "Projects",
 	description:
-		"Explore Ayush Chugh's projects, including Shriproperty, A2INFINITE, Worldtravels, and various open-source contributions.",
+		"Explore projects by Md Emon Hossen, including Fast Mart, WeRWealthy, and more.",
 	openGraph: {
-		title: "Ayush Chugh's Projects",
+		title: "Md Emon Hossen's Projects",
 		description:
-			"Discover the latest projects built by Ayush Chugh, including web development and open-source contributions.",
-		url: "https://ayushchugh.com/projects",
-		siteName: "Ayush Chugh's Portfolio",
+			"Discover the latest projects built by Md Emon Hossen, including web development and open-source contributions.",
+		url: "https://imrannaaziremon.vercel.app/projects",
+		siteName: "Md Emon Hossen's Portfolio",
 		images: [
 			{
-				url: "https://cdn.ayushchugh.com/open-graph/business-card.png",
+				url: "/public/logos/placeholder.png",
 				width: 1200,
 				height: 630,
-				alt: "Ayush Chugh's Projects",
+				alt: "Md Emon Hossen's Projects",
 			},
 		],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Ayush Chugh's Projects",
+		title: "Md Emon Hossen's Projects",
 		description:
-			"Explore a variety of projects and open-source contributions by Ayush Chugh.",
-		images: ["https://cdn.ayushchugh.com/open-graph/business-card.png"],
-		creator: "@aayushchugh_x",
-		creatorId: "@aayushchugh_x",
-		site: "@aayushchugh_x",
-		siteId: "@aayushchugh_x",
+			"Explore a variety of projects and open-source contributions by Md Emon Hossen.",
+		images: ["/public/logos/placeholder.png"],
+		creator: "@your_twitter_handle", // dummy
+		creatorId: "@your_twitter_handle", // dummy
+		site: "@your_twitter_handle", // dummy
+		siteId: "@your_twitter_handle", // dummy
 	},
 };
 
-const projectsData = [
+const projectsData = (myData.projects || [
 	{
-		project: "Worldtravels (1k+ active users daily)",
-		logo: "https://cdn.ayushchugh.com/logos/worldtravels.png",
-		description:
-			"A B2B flight booking platform for travel agencies to manage bookings and payments.",
-		technologies: ["React", "Redux", "TypeScript", "NextJS"],
-		website: "https://www.worldtravelsonline.in/en",
+		name: "Dummy Project",
+		description: "This is a dummy project. Replace with your real project.",
+		features: ["Feature 1", "Feature 2"],
+		technologies: ["Tech1", "Tech2"],
+		links: { github: "#", live: "#" },
 	},
-	{
-		project: "EJS Snippets And Color Highlighting for VsCode (7k+ downloads)",
-		logo: "https://cdn.ayushchugh.com/logos/ejs-language-snippets-and-color-highlighting-vscode.png",
-		description: "Add snippets and syntax highlighting for EJS",
-		technologies: ["Javascript", "vsce"],
-		website:
-			"https://marketplace.visualstudio.com/items/?itemName=AyushChugh.ejs-snippets-and-color-highlighting",
-	},
-	{
-		project: "Invoicen",
-		logo: "https://cdn.ayushchugh.com/logos/invoicen-icon.png",
-		description:
-			"A Simple Invoice Generator for Freelancers and Businesses and enterprises.",
-		technologies: ["NextJS", "shadcn", "TypeScript", "Tailwind"],
-		website: "https://invoicen.ayushchugh.com",
-	},
-	{
-		project: "Shriproperty",
-		logo: "https://cdn.ayushchugh.com/logos/shriProperty.png",
-		description:
-			"A real estate platform that simplifies the process of finding and listing properties.",
-		technologies: ["React", "Node.js", "MongoDB", "Express.js"],
-		website: "https://www.shriproperty.com",
-	},
-	{
-		project: "A2INFINITE",
-		logo: "https://cdn.ayushchugh.com/logos/a2infinite.png",
-		description:
-			"A platform for downloadable practice worksheets for students.",
-		technologies: ["HTML", "CSS", "JavaScript"],
-		website: "https://www.a2infinite.com",
-	},
-
-	{
-		project: "Repo Command",
-		logo: "https://cdn.ayushchugh.com/logos/repository-commander.svg",
-		description:
-			"A Github app that lets you automate tasks by adding labels and using `/` commands in comments to approve or merge pull requests.",
-		technologies: ["Node.js", "TypeScript", "Probot"],
-		website: "https://github.com/marketplace/repo-command",
-	},
-
-	{
-		project: "Soumya Sourav's Portfolio",
-		description:
-			"Personal portfolio website for Soumya Sourav, a Asst. Vice President",
-		technologies: ["NextJS", "TypeScript", "Firebase"],
-		website: "https://soumyasourav.com",
-	},
-
-	{
-		project: "FlipTimer",
-		description:
-			"A countdown timer that lets users set a target date and displays time left in months, weeks, days, hours, minutes, and seconds.",
-		technologies: ["NextJS", "TypeScript", "shadcn", "framer-motion"],
-		website: "https://fliptimer.ayushchugh.com",
-	},
-];
+]).map((project, idx) => ({
+	project: project.name || `Dummy Project ${idx+1}`,
+	logo: "/public/logos/placeholder.png",
+	description: project.description || "Dummy description.",
+	technologies: project.technologies || ["Tech1", "Tech2"],
+	website: (project.links && project.links.live) || "#",
+}));
 
 // const openSourceData = [
 // {

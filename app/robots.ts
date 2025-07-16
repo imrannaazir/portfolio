@@ -5,7 +5,7 @@ export default function robots() {
 				userAgent: "*",
 			},
 		],
-		sitemap: "https://ayushchugh.com/sitemap.xml",
-		host: "https://ayushchugh.com",
+		sitemap: "https://imrannaaziremon.vercel.app/sitemap.xml",
+		host: "https://imrannaaziremon.vercel.app",
 	};
 }

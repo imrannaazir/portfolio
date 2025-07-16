@@ -7,32 +7,32 @@ import { EnvelopeSimple } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
 	title: "Contact",
-	description: "Get in touch with Ayush Chugh via email or schedule a meet.",
+	description: "Get in touch with Md Emon Hossen via email or schedule a meet.",
 	openGraph: {
-		title: "Contact Ayush Chugh",
+		title: "Contact Md Emon Hossen",
 		description:
-			"Find and connect with Ayush Chugh via email or book a meeting.",
-		url: "https://ayushchugh.com/contact",
-		siteName: "Ayush Chugh's Portfolio",
+			"Find and connect with Md Emon Hossen via email or book a meeting.",
+		url: "https://imrannaaziremon.vercel.app/contact",
+		siteName: "Md Emon Hossen's Portfolio",
 		images: [
 			{
-				url: "https://cdn.ayushchugh.com/open-graph/business-card.png",
+				url: "/public/logos/placeholder.png",
 				width: 1200,
 				height: 630,
-				alt: "Contact Ayush Chugh",
+				alt: "Contact Md Emon Hossen",
 			},
 		],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Contact Ayush Chugh",
-		description: "Connect with Ayush Chugh via email or schedule a meet.",
-		images: ["https://cdn.ayushchugh.com/open-graph/business-card.png"],
-		creator: "@aayushchugh_x",
-		creatorId: "@aayushchugh_x",
-		site: "@aayushchugh_x",
-		siteId: "@aayushchugh_x",
+		title: "Contact Md Emon Hossen",
+		description: "Connect with Md Emon Hossen via email or schedule a meet.",
+		images: ["/public/logos/placeholder.png"],
+		creator: "@your_twitter_handle", // dummy
+		creatorId: "@your_twitter_handle", // dummy
+		site: "@your_twitter_handle", // dummy
+		siteId: "@your_twitter_handle", // dummy
 	},
 };
 
@@ -49,10 +49,10 @@ export default function ContactPage() {
 				<div className="flex items-center mb-4">
 					<EnvelopeSimple size={24} />
 					<a
-						href="mailto:hey@ayushchugh.com"
+						href="mailto:imrannaaziremon@gmail.com"
 						className="underline text-sm ml-1"
 					>
-						hey@ayushchugh.com
+						imrannaaziremon@gmail.com
 					</a>
 				</div>
 
@@ -64,7 +64,7 @@ export default function ContactPage() {
 				</h2>
 				<div>
 					<a
-						href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ32m0Ha13-Djq7bDeqBFdEgjmkBLk3uIF9LGwK2eIrl1BGBVxBAhqnpYj7ealqSNG0JYpSUTikB?gv=true"
+						href="https://calendly.com/your-meeting-link" // dummy
 						target="_blank"
 						rel="noopener noreferrer"
 						className="underline text-sm"

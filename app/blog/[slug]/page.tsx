@@ -21,7 +21,7 @@ export async function generateMetadata({
 	// let ogImage = `https://ayushchugh.com/ogs/ogs-bg-blog-${post.slug}.png`;
 	let ogImage = post.metadata.ogImage
 		? post.metadata.ogImage
-		: `https://cdn.ayushchugh.com/open-graph/business-card.png`;
+		: `/public/logos/placeholder.png`;
 
 	return {
 		title,
@@ -31,7 +31,7 @@ export async function generateMetadata({
 			description,
 			type: "article",
 			publishedTime,
-			url: `https://ayushchugh.com/blog/${post.slug}`,
+			url: `https://imrannaaziremon.vercel.app/blog/${post.slug}`,
 			images: [
 				{
 					url: ogImage,
@@ -43,10 +43,10 @@ export async function generateMetadata({
 			title,
 			description,
 			images: [ogImage],
-			creator: "@aayushchugh_x",
-			creatorId: "@aayushchugh_x",
-			site: "@aayushchugh_x",
-			siteId: "@aayushchugh_x",
+			creator: "@your_twitter_handle", // dummy
+			creatorId: "@your_twitter_handle", // dummy
+			site: "@your_twitter_handle", // dummy
+			siteId: "@your_twitter_handle", // dummy
 		},
 	};
 }

@@ -1,0 +1,174 @@
+{
+    "name": "Md Emon Hossen",
+    "title": "Frontend Developer",
+    "location": "Jashore, Bangladesh",
+    "phone": "+8801405580607",
+    "email": "imrannaaziremon@gmail.com",
+    "social_links": {
+      "linkedin": "https://www.linkedin.com/in/imrannaaziremon/",
+      "github": "https://github.com/imrannaazir/",
+      "portfolio": "https://imrannaaziremon.vercel.app/"
+    },
+    "experience": [
+      {
+        "position": "Frontend Developer",
+        "company": "TechForing Ltd",
+        "location": "Dhaka, Bangladesh",
+        "duration": "April 2025 - Present",
+        "technologies": [
+          "TypeScript", "React.js", "Next.js", "Tailwind", "Shadcn Ui",
+          "GSAP", "Farmer Motion", "Redux Toolkit", "Express.js"
+        ]
+      },
+      {
+        "position": "Full Stack Developer",
+        "company": "Dignity Of Noble",
+        "location": "Hyderabad, India",
+        "duration": "April 2024 - February 2025",
+        "technologies": [
+          "Express.js", "Sequelize", "PostgreSQL", "TypeScript", "JWT",
+          "React.js", "Redux Toolkit", "Tailwind CSS", "Shadcn"
+        ]
+      },
+      {
+        "position": "Frontend Developer Intern",
+        "company": "Dignity Of Noble",
+        "location": "Hyderabad, India",
+        "duration": "September 2023 - March 2024",
+        "technologies": [
+          "React JS", "React Router Dom", "Tailwind CSS", "Material Ui",
+          "Redux Toolkit", "Next JS", "React Hook Form"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Fast Mart – E-commerce Platform",
+        "description": "FastMart is a full-stack e-commerce platform with user and admin applications, featuring product management, filtering, cart, checkout, and order tracking.",
+        "features": [
+          "User Management",
+          "Product Operations",
+          "Cart & Orders",
+          "Wishlist & Preferences",
+          "Admin Dashboard"
+        ],
+        "technologies": [
+          "TypeScript", "Next.js", "React.js", "Express", "Ant Design",
+          "Shadcn Ui", "Tailwind", "Redux toolkit", "Zod"
+        ],
+        "links": {
+          "github": "https://github.com/imrannaazir/fast-mart",
+          "live": "https://fast-mart.vercel.app/",
+          "admin": "https://admin-fastmart.vercel.app/"
+        }
+      },
+      {
+        "name": "WeRWealthy",
+        "description": "WeRWealthy is a global wealth advisory platform built to deliver fast, secure, and responsive experiences for high-net-worth users.",
+        "features": [
+          "Development with Next.js & Tailwind CSS",
+          "Form Integration with React Hook Form and Zod",
+          "Lead Capture with Bitrix24 and Calendly",
+          "SEO Optimization",
+          "Animated UI/UX Features"
+        ],
+        "technologies": [
+          "Next.js", "TypeScript", "Tailwind CSS", "Radix UI",
+          "React Hook Form", "Zod", "Embla Carousel", "Framer Motion"
+        ],
+        "links": {
+          "live": "https://werwealthy.com/"
+        }
+      }
+    ],
+    "skills": {
+      "frontend": [
+        "React", "Next.js", "Redux", "TypeScript", "Ant Design", "Tailwind",
+        "Framer Motion", "ShadCN Ui", "Hook Form", "GSAP"
+      ],
+      "backend": [
+        "Express.js", "Mongoose", "Prisma", "JWT", "Sequelize", "Multer",
+        "Nodemailer", "Bcrypt", "Zod", "Socket", "Docker", "Redis"
+      ],
+      "database": ["MongoDB", "PostgreSQL", "MySQL"],
+      "tools": [
+        "Git", "VS Code", "Dev Tools", "Figma", "GitHub", "Postman",
+        "Redux Devtools", "Netlify", "Canva", "Vercel", "Slack", "Discord"
+      ]
+    },
+    "courses": [
+      {
+        "title": "Think in a Redux way",
+        "batch": "Batch - 2",
+        "provider": "Learn with Sumit",
+        "certificate": "Recommendation Letter & Certificate"
+      },
+      {
+        "title": "Complete Web Development Course",
+        "level": "Black Belt",
+        "provider": "Programming Hero",
+        "certificate": "Black Belt & Certificate"
+      },
+      {
+        "title": "Next Level Web Development - Full-stack Track",
+        "provider": "Programming Hero",
+        "certificate": "Certificate"
+      }
+    ],
+    "documents": [
+      "https://drive.google.com/file/d/1WI2__iP04Tfcdtlhu0RKjd4JM67zZV4g/view?usp=sharing",
+      "https://drive.google.com/file/d/1U6kLFHLKYdi0uKHPIlyGM103RSppfSDX/view?usp=sharing",
+      "https://drive.google.com/file/d/12GhFoDBPptlwsjqUecdskPTJu8UChYOg/view?usp=sharing",
+      "https://drive.google.com/file/d/1HHswZoMzsIeePjOekWtZZYaT3ZNc-1B8/view?usp=sharing",
+      "https://drive.google.com/file/d/19IjQF1bR36ryfDzoxnK_HJrsHPg3cY-7/view?usp=sharing"
+    ],
+    "aboutMe": "This is Md. Emon Hossen, a MERN Stack Developer from Bangladesh. I've self-taught all the tech stacks I use, such as React JS, Redux, Next.js, and Tailwind CSS. ✌<br /> <br /> I consider myself fortunate to be able to develop and optimize web applications for a living. My deep interest in the web platform and SaaS products drives me to create results-driven digital solutions for my clients while becoming part of meaningful businesses along the way. <br /> <br /> I've developed over 50 websites and worked closely with the founders of various startups. In addition, I've committed my time to three startups full-time, assisting them in hiring and managing their technical teams. I am excited to become a part of your journey. <br /> <br /> Recently, I developed a digital marketing platform called The Run Digital. We help entrepreneurs define and achieve their web goals through our web-based solutions. We are driven by key performance indicators (KPIs) to ensure success.",
+    "__replace_these_fields__": [
+      {
+        "field": "twitter_handle",
+        "used": "@your_twitter_handle",
+        "note": "Replace with your real Twitter/X handle. Used in metadata, contact, and footer."
+      },
+      {
+        "field": "x_handle",
+        "used": "https://x.com/your_x_handle",
+        "note": "Replace with your real X (Twitter) profile link. Used in footer and contact info."
+      },
+      {
+        "field": "meeting_link",
+        "used": "https://calendly.com/your-meeting-link",
+        "note": "Replace with your real meeting scheduling link. Used in contact page."
+      },
+      {
+        "field": "project.logo",
+        "used": "/public/logos/placeholder.png",
+        "note": "Replace with your real project/company logo URLs. Used in projects, resume, and blog."
+      },
+      {
+        "field": "coverImage/ogImage in blog posts",
+        "used": "/public/logos/placeholder.png",
+        "note": "Replace with your real blog post cover images."
+      },
+      {
+        "field": "education/volunteering",
+        "used": "Dummy Institution, Dummy Organization, etc.",
+        "note": "Add your real education and volunteering info in my-data.json for full personalization."
+      },
+      {
+        "field": "workExperience.responsibilities",
+        "used": "[\"Responsibility 1\", \"Responsibility 2\"]",
+        "note": "Add your real job responsibilities for each experience."
+      },
+      {
+        "field": "project.features",
+        "used": "[\"Feature 1\", \"Feature 2\"]",
+        "note": "Add your real project features for each project."
+      },
+      {
+        "field": "project.links.github/live",
+        "used": "#",
+        "note": "Add your real project GitHub and live links."
+      }
+    ]
+  }
+  
