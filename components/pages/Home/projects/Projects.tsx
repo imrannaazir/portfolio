@@ -33,13 +33,13 @@ const Projects = () => {
           return <ProjectCard key={data?.id} index={index} {...data} />;
         })}
       </div>
-      <div className="text-center mt-6">
-        <HoverButton
-          onClick={handleRedirect}
-          label="View More"
-          className="bg-slate-800 py-3 px-6"
-        />
-      </div>
+      {/*   <div className="text-center mt-6"> */}
+      {/*     <HoverButton */}
+      {/*       onClick={handleRedirect} */}
+      {/*       label="View More" */}
+      {/*       className="bg-slate-800 py-3 px-6" */}
+      {/*     /> */}
+      {/*   </div> */}
     </section>
   );
 };
