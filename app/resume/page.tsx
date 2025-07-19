@@ -82,7 +82,7 @@ export default function WorkPage() {
 	return (
 		<section>
 			<div className="flex">
-				<h1 className='font-medium text-2xl mb-2 tracking-tight font-["monospace"]'>
+				<h1 className='font-medium text-2xl mb-2 tracking-tight'>
 					My Resume 📝
 				</h1>
 			</div>

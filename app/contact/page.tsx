@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
 	return (
 		<section>
-			<h1 className='font-medium text-2xl mb-6 tracking-tight font-["monospace"]'>
+			<h1 className='font-medium text-2xl mb-6 tracking-tight'>
 				Contact 📧
 			</h1>
 
@@ -59,7 +59,7 @@ export default function ContactPage() {
 				<Separator />
 
 				{/* Meeting Schedule Option */}
-				<h2 className="font-medium text-2xl mb-6 tracking-tight font-['monospace']">
+				<h2 className="font-medium text-2xl mb-6 tracking-tight">
 					Want to chat? Schedule a 1:1 with me!
 				</h2>
 				<div>

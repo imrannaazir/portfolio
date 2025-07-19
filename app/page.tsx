@@ -41,7 +41,7 @@ export default function Page() {
   return (
     <section>
       <header className="mb-6">
-        <h1 className='font-medium text-2xl mb-2 tracking-tight font-["monospace"]'>
+        <h1 className='font-medium text-2xl mb-2 tracking-tight'>
           Sup, I'm Md Emon Hossen👋
         </h1>
         <p className="text-lg prose prose-neutral dark:prose-invert">

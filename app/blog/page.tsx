@@ -43,7 +43,7 @@ export default function BlogPage() {
 
 	return (
 		<section>
-			<h2 className="font-medium text-2xl mb-8 tracking-tight font-['monospace']">
+			<h2 className="font-medium text-2xl mb-8 tracking-tight">
 				Writings 🧑🏻‍💻
 			</h2>
 			{blogs
